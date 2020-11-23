@@ -22,7 +22,7 @@ title: CodingSpace
 email: manikant18.btech@nitap.ac.in
 description: >- # this means to ignore newlines until "baseurl:"
   CodingSpace is a medium to share or express my views about various topics releated to data science and software engineering.
-baseurl: "/CodingSpcae" # the subpath of your site, e.g. /blog
+baseurl: "/CodingSpace" # the subpath of your site, e.g. /blog
 url: "https://devil-cyber.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  devil-cyber
 linkedin_username: manikant-kumar-550998192

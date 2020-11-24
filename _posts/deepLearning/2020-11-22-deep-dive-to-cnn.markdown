@@ -5,6 +5,9 @@ date:   2020-11-22 23:16:29 +0530
 categories: Deep Learning
 permalink: /deep-dive-to-cnn/
 ---
+ 
+
+
 LeNet is a `convolutional neural network structure` proposed by [Yann Lecun](http://yann.lecun.com/) in 1998. It was the first big breakthrough in the world of `deep learning and computer vision`. In general, LeNet refers to LeNet-5.This architecture was the first time applied over the [MNIST](http://yann.lecun.com/exdb/mnist/)  dataset to recognize the handwritten character. 
 
 ![](https://inblog.in/uploads/RxR3t6nBckHfcw9hcc8kn8Ejv3zOIw.gif)

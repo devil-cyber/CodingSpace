@@ -7,7 +7,7 @@ permalink: /mask-detection/
 ---
 
 # Welcome to Face Mask Detection 👋
-### 🏠 [Homepage](https://github.com/devil-cyber/Mask-Detection/README.md)
+### 🏠 [Homepage](https://github.com/devil-cyber/Mask-Detection)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/devil-cyber/Mask-Detection/README.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)

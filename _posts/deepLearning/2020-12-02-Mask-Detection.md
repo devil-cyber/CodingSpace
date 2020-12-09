@@ -11,10 +11,14 @@ permalink: /mask-detection/
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/devil-cyber/Mask-Detection/README.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
-[![Twitter: Manikan31004419](https://img.shields.io/twitter/follow/Manikan31004419.svg?style=social)](https://twitter.com/Manikan31004419)
+[![Twitter: Manikan31004419](https://img.shields.io/twitter/follow/Manikan09676833.svg?style=social)](https://twitter.com/Manikan09676833)
+[![Demo](https://img.shields.io/badge/Demo-Live%20project%20demo-blue)](https://share.streamlit.io/devil-cyber/mask-detection/app.py)
 
 > This is a Faster RCNN based object detection model that detects the person face mask.It can clearly detect face mask in group of people with a great ease.
+
 ![Demo](https://github.com/devil-cyber/Mask-Detection/raw/master/video.gif)
+
+![](https://camo.githubusercontent.com/b472b8dbb334025196143f5e0480f1f609145adc1f51a1df844a0af66376e79c/68747470733a2f2f617070732e73747265616d6c697475736572636f6e74656e742e636f6d2f646576696c2d63796265722f6d61736b2d646574656374696f6e2f6d61737465722f6170702e70792f2b2f6d656469612f31613261396262653935373038643430396539643434343961616561343439366331313830653535633162346364316131303838613531382e6a706567)
 
  
 
@@ -245,7 +249,7 @@ cap.release()
 👤 **Manikant Kumar**
 
 * Website: https://devil-cyber.github.io/CodingSpace/
-* Twitter: [@Manikan31004419](https://twitter.com/Manikan31004419)
+* Twitter: [@Manikan31004419](https://twitter.com/Manikan09676833)
 * Github: [@devil-cyber](https://github.com/devil-cyber)
 * LinkedIn: [@manikant-kumar-550998192](https://linkedin.com/in/manikant-kumar-550998192)
 

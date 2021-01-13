@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mathematics"
+title:  "Basic Mathematical Algorithm"
 date:   2021-01-12 09:05:29 +0530
 categories: Algorithm
 permalink: /ds-algo-mathematics/
@@ -97,4 +97,78 @@ def GCD(a,b):
 def LCM(a,b):
     gcd = GCD(a,b)
     return int((a*b)/gcd)
+```
+
+<h4 style="color:orange;">Check for prime number</h4>
+`The number having only 1 and itself as factor is known as prime number eg. 2,3,5,7,11,37 etc`
+
+```python
+# Prime number check eg. INPUT - 121 OUTPUT - False or INPUT - 7 OUTPUT - True
+# time complexity for this solution is O(sqrt(n))
+ def isPrime(n):
+    if n==1:
+        return False
+    if n==2 or n==3:
+        return True
+    if n%2==0 or n%3==0:
+        return False
+    for i in range(5,int(n**(0.5))+1):  
+        if(n%i==0 or n%(i+1)==0):
+            return False
+        i=i+6
+    return True
+```
+<h4 style="color:orange;">Find the prime factors of a number</h4>
+
+```python
+# Find the number of prime factors of a number eg. INPUT - 450 OUTPUT - 2*2*3*3*5(450)
+# time complexity of this solution is O(sqrt(n))
+def primeFactors(n):
+    if n<=1:
+        return 'no prime factors avilable'
+    while(n%2==0):
+        print(2,end=" x ")
+        n=n//2
+    while(n%3==0):
+        print(3,end=" x ")
+        n=n//3
+    for i in range(5,int(n**(0.5))+1):
+        while(n%i==0):
+            print(i,end=" x ")
+            n=n//i
+        while(n%(i+1)==0):
+            print(i+1,end=" x ")
+            n=n//(i+1)
+        i=i+6
+    if(n>3):
+        print(n)
+```
+<h4 style="color:orange;">Print the divisors of a number in sorted order</h4>
+
+```python
+# print the number of divisors in sorted order
+# the time complexity for this solution O(sqrt(n))
+def divisors(n):
+    for i in range(1,int(n**(0.5))):
+        if(n%i==0):
+            print(i,end=" ")
+    for i in range(int(n**(0.5)),0,-1):
+        if(n%i==0):
+            print(n//i,end=" ")
+```
+<h4 style="color:orange;">Find list of prime number less than or equal to the given number</h4>
+
+```python
+# Sieve of Eratosthenes Algorithm
+# find the prime number less than or upto given number INPUT - 10 OUTPUT - 2,3,5,7
+# time complexity for this solution is O(nloglog(n))
+def prime_number(n):
+    data=[True]*(n+1)
+    for i in range(2,n+1):
+        if(isPrime(i)):
+            print(i,end=" ")
+            for j in range(i*i,n+1):
+                data[j]=False
+                j=j+i
+     
 ```

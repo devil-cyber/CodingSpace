@@ -9,7 +9,7 @@ permalink: /about/
 <p style="color:grey;">Hi there, I'm Manikant Singh 👋</P>
 
 `I'm a Student, Full-Stack Developer, and Data Science enthusiast!`
-`Over 3000 lines of code in Javascript and 1000 lines of code in python and going`
+` I have written over 3000 lines of code in Javascript and 1000 lines of code in python and going`
   
 
 
@@ -41,8 +41,9 @@ permalink: /about/
 <h3 style="color:grey;">Experience</h3>
 ----------
 <h4 style="color:orange">Machine Learning Intern At <a href="https://ineuron.ai/">Ineuron.ai</a></h4>
-`Working with the product development team mainly on NLP based chatbot  for an international client from 
-  Qatar Airlines.I also got a chance to work upon some computer vision based project for the Bangalore based clients`
+` Working with the product development team to create a platform that will recommend a best fashion outfit for the
+user as well as recommend beauty product using video analytics` 
+
 <h4 style="color:orange">Full-Stack-Developer Intern At <a href="https://thermelgy.com/">Thermelgy</a></h4>
 `Working in close contact with the API team and UI team, design and build a service api that  keeps track of Heat Pump failure or any anomaly . If any anomaly occurs it sends a SMS and email notification to the owner with a complete log.This mechanism reduces the overall customer complaint by 15%`
 

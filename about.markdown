@@ -46,15 +46,7 @@ user as well as recommend beauty product using video analytics`
 
 <h4 style="color:orange">Full-Stack-Developer Intern At <a href="https://thermelgy.com/">Thermelgy</a></h4>
 `Working in close contact with the API team and UI team, design and build a service api that  keeps track of Heat Pump failure or any anomaly . If any anomaly occurs it sends a SMS and email notification to the owner with a complete log.This mechanism reduces the overall customer complaint by 15%`
-
-<h3 style="color:grey;">Some Cool Project</h3>
-----------
-[Codeial](https://github.com/devil-cyber/Social-Media-Web-Application)<br/>
-[Crppto Coin](https://github.com/devil-cyber/Crypto-Coin)<br/>
-[Image Scrapper](https://github.com/devil-cyber/Image-Scrapper)<br/>
-[Json Data](https://github.com/devil-cyber/JsonData)<br/>
-[Keras Snippet](https://github.com/devil-cyber/Keras-Snippet-VsCode-Extension)
-
+ 
  
 
  

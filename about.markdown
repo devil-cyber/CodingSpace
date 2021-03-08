@@ -6,52 +6,80 @@ permalink: /about/
 
 <img src="https://avatars1.githubusercontent.com/u/52333306?v=4" width="150px" style="border-radius:10%;"/>
 
-<p style="color:grey;">Hi there, I'm Manikant Singh 👋</P>
+# Manikant Kumar
+**`Love to bring something beautiful out of data. Experience in Machine Learning, Deep Learning, NLP, Data Engineering, Full Stack Developer. Skilled in BigData technologies and Data Visualization ( Hadoop, Spark, SparkStreaming, HBase, Hive, Sqoop, Kafka, Datastax Cassandra,) with a good grasp of Java, Python, javascript, node.js, Flask, REST API, and Databases.`**
 
-`I'm a Student, Full-Stack Developer, and Data Science enthusiast!`
-` I have written over 3000 lines of code in Javascript and 1000 lines of code in python and going`
-  
+<h2 style='color:grey;'> <i>Internship & Experience</i> </h2>
+
+#### Full-Stack Developer Intern 
+
+**[Thermrlgy](https://thermelgy.com/) an IIT Madras Startup Chennai, India**
+
+- Working in close contact with the API team and UI team, design and build a service API that keeps track of Heat
+Pump failure or any anomaly
+- If any anomaly occurs it sends a SMS and email notification to the owner with a complete log.
+- This mechanism reduced the overall customer complaint by 15%
+
+#### Data Science and Machine Learning Intern 
+
+**[Ineuron.ai](https://ineuron.ai/) Bangalore, India**
+
+- Explored methods to generate analytic from video usingDeep Learning and OpenCv
+- Working with the product development team to create a platform that will recommend a best fashion outfit for the
+users.
+- Contributed 2K+ lines of code to an established codebase via Git
+
+#### Project Admin & Mentor
+
+**[StudentCode-in](https://www.linkedin.com/company/studentcode-in/)**
+
+- Student Code-In is an organization that helps the student to get started with open source. 
+- I was also a part of this program as a project admin and mentor for node.js based projects.
+
+<h2 style='color:grey;'> <i>Projects</i> </h2>
+
+[Reedit flair Detection](https://github.com/devil-cyber/Reddit-Flair-Detection) | Python, Flask, Scikit-learn, NLP
+
+- Developed a full-stack web application using with Flask that detect the flair of a Reedit post using different
+    classification algorithm
+- The model has been trained with various trail and error on the Reedit dataset.
+
+[Wine Quality Detection](https://github.com/devil-cyber/Redwine-Quality-Prediction) | Python, Flask, Scikit-learn, Data Analysis
+
+- Predicting the Quality of Red Wine using Random Forest Algorithms for Regression Analysis
+
+[Mask Detection](https://github.com/devil-cyber/Mask-Detection) | Python, Tensorflow, RCNN, Object Detection
+
+- This is a Faster RCNN based object detection model that detects the person face mask
+- It can clearly detect face mask in group of people with a great ease
 
 
+[FashionWear](https://github.com/devil-cyber/FashionWear) | Python,Tensorflow,SSD-Mobilenet,Keras
 
-<h3 style="color:grey">Languages and Tools that I used:</h3>
+- A Deep Learning Model to classify the fashion wear and also detect them.
 
-<img align="left" alt="Python" width="100px" src="https://www.python.org/static/community_logos/python-logo-generic.svg" />
-<img align="left" alt="Tensorflow" width="30px" src="https://miro.medium.com/max/4000/0*4Z6mwORGhtSAgeQ2.png" />
-<img align="left" alt="Keras" width="60px" src=" https://miro.medium.com/max/652/1*qllYdaKrZLMhK-nK1zUVEQ.png" />
-<img align="left" alt="Pytorch" width="60px" src=" https://miro.medium.com/max/512/1*FCArwuy8wAglYUXp04SN7g.png" />
-<img align="left" alt="JavaScript" width="30px" src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png" />
-<img align="left" alt="React" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-<img align="left" alt="Node.js" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
-<img align="left" alt="MongoDB" width="80px" src="https://nakedsecurity.sophos.com/wp-content/uploads/sites/2/2017/01/mongodb.png" />
-<img align="left" alt="Git" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<br />
-<br/>
- 
 
-<h3 style="color:grey;">Education</h3>
----------
+[Train Test Validation](https://github.com/devil-cyber/Train-Valid-Test) | Python, TQDM, Computer Vision
+- This script converts the image dataset classes to train test and valid folder for deep learning and computer vision
+    task
 
-<p style="color:orange">2018-2022 (expected)</P>
-`Btech, Computer Science NIT Arunachal Pradesh`<br/>
-`CGPA:8.16`
+<h2 style='color:grey;'> <i>Technical Skills</i> </h2>
 
-     
+```
+Languages: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS
+```
+```
+Frameworks: React, Node.js, Flask, PyTorch, Tensorflow
+```
+```
+Big Data and Machine Learning: Spark, Tensorflow, PyTorch, Hadoop, MongoDB, 
+Python (e.g., scikit-learn,NumPy, pandas, matplotlib)
+```
+<h2 style='color:grey;'> <i>Achievements</i> </h2>
 
-<h3 style="color:grey;">Experience</h3>
-----------
-<h4 style="color:orange">Machine Learning Intern At <a href="https://ineuron.ai/">Ineuron.ai</a></h4>
-` Working with the product development team to create a platform that will recommend a best fashion outfit for the
-user as well as recommend beauty product using video analytics` 
+- Open-source contributor and a community member at OpenMined
+- Recently got a chance to work as Microsoft Student Ambassador
+- I have dveloped a [Vscode Keras extension](https://marketplace.visualstudio.com/items?itemName=devil-cyber.keras-snippet) that provide boilerplate for different deep learning project that got more than
+`1.67k` install.
 
-<h4 style="color:orange">Full-Stack-Developer Intern At <a href="https://thermelgy.com/">Thermelgy</a></h4>
-`Working in close contact with the API team and UI team, design and build a service api that  keeps track of Heat Pump failure or any anomaly . If any anomaly occurs it sends a SMS and email notification to the owner with a complete log.This mechanism reduces the overall customer complaint by 15%`
- 
- 
-
- 
-<img align="left" alt="devil-cyber's Github Stats" src="https://github-readme-stats.vercel.app/api?username=devil-cyber&show_icons=true&hide_border=true" />
-
- 
- 
 

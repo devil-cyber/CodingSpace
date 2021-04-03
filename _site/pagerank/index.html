@@ -1,0 +1,641 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Understanding PageRank - Blog</title>
+<meta name="description" content="Indexing the web pages">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Blog">
+<meta property="og:title" content="Understanding PageRank">
+<meta property="og:url" content="http://localhost:4000/pagerank/">
+
+
+  <meta property="og:description" content="Indexing the web pages">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/algorithm/page.jpg">
+
+
+
+  <meta name="twitter:site" content="@Manikan09676833">
+  <meta name="twitter:title" content="Understanding PageRank">
+  <meta name="twitter:description" content="Indexing the web pages">
+  <meta name="twitter:url" content="http://localhost:4000/pagerank/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="http://localhost:4000/assets/images/algorithm/page.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2021-04-03T00:00:00+05:30">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/pagerank/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Manikant Kumar",
+      "url": "http://localhost:4000",
+      "sameAs": ["https://facebook.com/isarth","https://twitter.com/Manikan09676833"]
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Blog Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">Blog</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/" >About</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #333; "
+>
+  
+    <div class="wrapper">
+      <h1 class="page__title" itemprop="headline">
+        
+          Understanding PageRank
+
+        
+      </h1>
+      
+        <p class="page__lead">Indexing the web pages
+</p>
+      
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Understanding PageRank</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Understanding PageRank">
+    <meta itemprop="description" content="Indexing the web pages">
+    <meta itemprop="datePublished" content="April 03, 2021">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#basic-idea-behind-page-rank">Basic Idea behind Page Rank</a></li>
+  <li><a href="#page-rank-algorithm">Page Rank Algorithm</a>
+    <ul>
+      <li><a href="#step-1">STEP 1</a></li>
+      <li><a href="#step-2">STEP 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#implementing-page-rank">Implementing Page Rank</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:</p>
+
+<ul>
+  <li>Basic Idea behind Page Rank</li>
+  <li>Understanding the Pank Rank algorithm</li>
+  <li>Implementing Page Rank from scratch</li>
+</ul>
+
+<h2 id="basic-idea-behind-page-rank">Basic Idea behind Page Rank</h2>
+<p>The intuition behind the Page-Rank is based on the idea that popularity of a webpage is determined not only by the number of incoming links but also by the kind of incomings links. Citations from highly ranked pages contribute more than lower ranked web pages, for example if your website in linked by forbes website it will affect your ranking more than compared to a random website.<br /> 
+<br />
+Taking it further let’s take an example for calculation the PR of a web page A cited by web page B shown in Fig. 1:</p>
+<p align="center">
+<img src="/assets/images/Page_rank/ex.png" />
+<figcaption align="center">Fig.1 Example of web graph.</figcaption>
+</p>
+
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p>\begin{equation}
+ PR(A)=(1-d)* (1/N)+ d* P(B,A)*PR(B) 
+\end{equation}</p>
+
+<p align="left">
+ PR(A): PR of A<br />
+ PR(B): PR of B<br />
+ P(B,A): Probability going from B to A (here it is equal to one)<br />
+ N: Total number of webpages(in our case 2).<br />
+ d: is known as damping factor, to add some randomness to the equation. 
+</p>
+<p>Simultaneously PR of B is calculated. This process continues until it PR does not change beyond some value.</p>
+
+<h2 id="page-rank-algorithm">Page Rank Algorithm</h2>
+<p>Taking it further we and to have a better understanding of how page rank works, we consider a graph (shown by fig 2) of web pages having links shown by the arrow. <br />Note that, if there are web pages with no out link then they do not contribute to the page ranking (they are usually referred to as dangling pages).</p>
+<p align="center">
+<img src="/assets/images/Page_rank/graph.png" />
+<figcaption align="center">Fig.2</figcaption>
+</p>
+<p>Our aim in now to figure of the PR of individual web pages. Inorder to do so, we need to perform the following steps:</p>
+
+<ul>
+  <li>Find the probabilities of going from one web page to another (respresented using probability transition matrix)</li>
+  <li>Apply the page rank algorithm our the web page until it converges.</li>
+</ul>
+
+<h3 id="step-1">STEP 1</h3>
+<p>Initially, page rank of all the web pages is taken as 1. The weight of the edge is the probability of going from a web page X to Y ( the web page A has 2 out links, therefore, the probability to visit each web page is 1/2 ). After expressing the web graph in terms of probabilities the web graph looks something like:</p>
+<p align="center">
+<img src="/assets/images/Page_rank/graph_prob.png" />
+<figcaption align="center">Fig.3</figcaption>
+</p>
+<p>Probability transition matrix is represented as:</p>
+<p align="center">
+<img src="/assets/images/Page_rank/mat.JPEG" /></p>
+
+<h3 id="step-2">STEP 2</h3>
+<p>The page rank of each web page is determined by applying the PageRank equation. This process is repeated until the algorithm converges i.e. the values of page rank do not change beyond a small value ( know as epsilon usually fixed as 1e-4 ). The damping factor (d) introduced is to add some randomness over the web graph i.e. d is a probability that a user will move to the linked web page and 1-d is the probability of choosing a random web page, it is usually taken as 0.85.</p>
+<h4 id="iteration-1">Iteration 1:</h4>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p align="center">
+<img src="/assets/images/Page_rank/formula.JPEG" />
+</p>
+<p><br /></p>
+
+<p><script type="math/tex">PR(C)=(.15)*(1/4)+ .85*(.5*1 + 1*1 + 1*1) = 2.16</script>
+<br />
+<br />
+The PR(C) can also be calculated by matrix dot product.</p>
+<p align="center">
+<img src="/assets/images/Page_rank/pr_c.JPEG" />
+</p>
+<p>Similarly, extending this for all the web pages we end up with the equation:  <br />  ( * represents matrix multiplication)</p>
+<p align="center">
+<img src="/assets/images/Page_rank/eq.JPEG" />
+</p>
+
+<p>\begin{equation}
+ PR=(1-d)(1/N)+ d* (C^T*PR) 
+\end{equation}</p>
+
+<p>Where matrix C represents the probability transition ( C[i][j] = probability of the user transitioning from page i to page j).
+The C matrix of our example can be expressed as the matrix represented above. Also, the initial page ranks are as assigned 1 for all the web pages. The PRs of web pages are calculated until the PRs converge to a certain value.</p>
+
+<h2 id="implementing-page-rank">Implementing Page Rank</h2>
+<p>Page Rank implementation in python:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="k">def</span> <span class="nf">pagerank</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">eps</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mf">0.85</span><span class="p">):</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">C</span><span class="p">))</span> 
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">P_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">N</span><span class="p">)</span><span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span> <span class="o">+</span> <span class="n">d</span> <span class="o">*</span> <span class="n">C</span><span class="o">.</span><span class="n">T</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">P</span><span class="p">)</span>
+        <span class="n">delta</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">P_</span> <span class="o">-</span> <span class="n">P</span><span class="p">)</span><span class="o">.</span><span class="nb">sum</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">delta</span> <span class="o">&lt;=</span> <span class="n">eps</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">P_</span>
+        <span class="n">P</span> <span class="o">=</span> <span class="n">P_</span>
+<span class="n">p</span><span class="o">=</span><span class="n">pagerank</span><span class="p">(</span><span class="n">C</span><span class="p">)</span>
+<span class="c">#result</span>
+<span class="c">#p=[1.16, 0.644, 1.19, 0.15]</span>
+</code></pre></div></div>
+<p>Final ranking of our example are C &gt; A &gt; B &gt; D !</p>
+
+<p>Notice: page rank of A is high even when it has only one incoming link.</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>
+    <p><a href="https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm">Page Rank Explained</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/PageRank#Iterative">Wikipedia Pagerank</a></p>
+  </li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-03T00:00:00+05:30">April 03, 2021</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=Manikan09676833&text=Understanding+PageRank%20http%3A%2F%2Flocalhost%3A4000%2Fpagerank%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fpagerank%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/mnist/" class="pagination--pager" title="Hand Written Digit Classification Using PyTorch
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/assets/images/algorithm/mnist.png"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/mnist/" rel="permalink">Hand Written Digit Classification Using PyTorch
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Deep Learning
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/assets/images/algorithm/cf.jpeg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/confusion/" rel="permalink">Confusion Matrix is not so confusing 😂
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Machine Learning
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/assets/images/algorithm/mask.jpeg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/mask/" rel="permalink">Face Mask Detection Using Tensorflow
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Deep Learning
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "http://localhost:4000/assets/images/algorithm/lr.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/linear_regression/" rel="permalink">Linear Regression At A Glance
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Machine Learning
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="https://twitter.com/Manikan09676833"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+      <li><a href="https://github.com/devil-cyber"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Manikant Kumar. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/pagerank/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/pagerank"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://devil-cyber.github.io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

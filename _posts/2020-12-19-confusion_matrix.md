@@ -85,4 +85,4 @@ print('Outcome values : \n', tp, fn, fp, tn)
 matrix = classification_report(actual,predicted,labels=[1,0])
 print('Classification report : \n',matrix)
 ```
-![output](/assets/images/algorithm/out.png)
+![output](https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/out.png)

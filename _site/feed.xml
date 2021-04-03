@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T14:05:23+05:30</updated><id>http://localhost:4000/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Understanding PageRank</title><link href="http://localhost:4000/pagerank/" rel="alternate" type="text/html" title="Understanding PageRank" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/pagerank</id><content type="html" xml:base="http://localhost:4000/pagerank/">&lt;p&gt;In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T14:27:13+05:30</updated><id>http://localhost:4000/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Understanding PageRank</title><link href="http://localhost:4000/pagerank/" rel="alternate" type="text/html" title="Understanding PageRank" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/pagerank</id><content type="html" xml:base="http://localhost:4000/pagerank/">&lt;p&gt;In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Basic Idea behind Page Rank&lt;/li&gt;
@@ -11,7 +11,7 @@
 &lt;br /&gt;
 Taking it further let’s take an example for calculation the PR of a web page A cited by web page B shown in Fig. 1:&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/ex.png&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/ex.png&quot; /&gt;
 &lt;figcaption align=&quot;center&quot;&gt;Fig.1 Example of web graph.&lt;/figcaption&gt;
 &lt;/p&gt;
 
@@ -34,7 +34,7 @@ Taking it further let’s take an example for calculation the PR of a web page A
 &lt;h2 id=&quot;page-rank-algorithm&quot;&gt;Page Rank Algorithm&lt;/h2&gt;
 &lt;p&gt;Taking it further we and to have a better understanding of how page rank works, we consider a graph (shown by fig 2) of web pages having links shown by the arrow. &lt;br /&gt;Note that, if there are web pages with no out link then they do not contribute to the page ranking (they are usually referred to as dangling pages).&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/graph.png&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/graph.png&quot; /&gt;
 &lt;figcaption align=&quot;center&quot;&gt;Fig.2&lt;/figcaption&gt;
 &lt;/p&gt;
 &lt;p&gt;Our aim in now to figure of the PR of individual web pages. Inorder to do so, we need to perform the following steps:&lt;/p&gt;
@@ -47,12 +47,12 @@ Taking it further let’s take an example for calculation the PR of a web page A
 &lt;h3 id=&quot;step-1&quot;&gt;STEP 1&lt;/h3&gt;
 &lt;p&gt;Initially, page rank of all the web pages is taken as 1. The weight of the edge is the probability of going from a web page X to Y ( the web page A has 2 out links, therefore, the probability to visit each web page is 1/2 ). After expressing the web graph in terms of probabilities the web graph looks something like:&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/graph_prob.png&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/images/Page_rank/graph_prob.png&quot; /&gt;
 &lt;figcaption align=&quot;center&quot;&gt;Fig.3&lt;/figcaption&gt;
 &lt;/p&gt;
 &lt;p&gt;Probability transition matrix is represented as:&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/mat.JPEG&quot; /&gt;&lt;/p&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/mat.JPEG&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;step-2&quot;&gt;STEP 2&lt;/h3&gt;
 &lt;p&gt;The page rank of each web page is determined by applying the PageRank equation. This process is repeated until the algorithm converges i.e. the values of page rank do not change beyond a small value ( know as epsilon usually fixed as 1e-4 ). The damping factor (d) introduced is to add some randomness over the web graph i.e. d is a probability that a user will move to the linked web page and 1-d is the probability of choosing a random web page, it is usually taken as 0.85.&lt;/p&gt;
@@ -61,7 +61,7 @@ Taking it further let’s take an example for calculation the PR of a web page A
 &lt;/script&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/formula.JPEG&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/formula.JPEG&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -70,11 +70,11 @@ Taking it further let’s take an example for calculation the PR of a web page A
 &lt;br /&gt;
 The PR(C) can also be calculated by matrix dot product.&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/pr_c.JPEG&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/pr_c.JPEG&quot; /&gt;
 &lt;/p&gt;
 &lt;p&gt;Similarly, extending this for all the web pages we end up with the equation:  &lt;br /&gt;  ( * represents matrix multiplication)&lt;/p&gt;
 &lt;p align=&quot;center&quot;&gt;
-&lt;img src=&quot;/assets/images/Page_rank/eq.JPEG&quot; /&gt;
+&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/eq.JPEG&quot; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;\begin{equation}
@@ -106,7 +106,7 @@ The C matrix of our example can be expressed as the matrix represented above. Al
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm&quot;&gt;Page Rank Explained&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.html&quot;&gt;Page Rank Explained&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/PageRank#Iterative&quot;&gt;Wikipedia Pagerank&lt;/a&gt;&lt;/p&gt;
@@ -359,7 +359,7 @@ actual yes/total = 105/165 = 0.64&lt;/li&gt;
 &lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classification_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predicted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Classification report : &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/algorithm/out.png&quot; alt=&quot;output&quot; /&gt;&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Face Mask Detection Using Tensorflow</title><link href="http://localhost:4000/mask/" rel="alternate" type="text/html" title="Face Mask Detection Using Tensorflow" /><published>2020-12-02T00:00:00+05:30</published><updated>2020-12-02T00:00:00+05:30</updated><id>http://localhost:4000/mask_detection</id><content type="html" xml:base="http://localhost:4000/mask/">&lt;h1 id=&quot;welcome-to-face-mask-detection-&quot;&gt;Welcome to Face Mask Detection 👋&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/out.png&quot; alt=&quot;output&quot; /&gt;&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Face Mask Detection Using Tensorflow</title><link href="http://localhost:4000/mask/" rel="alternate" type="text/html" title="Face Mask Detection Using Tensorflow" /><published>2020-12-02T00:00:00+05:30</published><updated>2020-12-02T00:00:00+05:30</updated><id>http://localhost:4000/mask_detection</id><content type="html" xml:base="http://localhost:4000/mask/">&lt;h1 id=&quot;welcome-to-face-mask-detection-&quot;&gt;Welcome to Face Mask Detection 👋&lt;/h1&gt;
 &lt;h3 id=&quot;-homepage&quot;&gt;🏠 &lt;a href=&quot;https://github.com/devil-cyber/Mask-Detection&quot;&gt;Homepage&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000&quot; alt=&quot;Version&quot; /&gt;
 &lt;a href=&quot;https://github.com/devil-cyber/Mask-Detection/README.md&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/documentation-yes-brightgreen.svg&quot; alt=&quot;Documentation&quot; /&gt;&lt;/a&gt;

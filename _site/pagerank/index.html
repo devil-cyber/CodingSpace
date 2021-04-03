@@ -266,7 +266,7 @@
 <br />
 Taking it further let’s take an example for calculation the PR of a web page A cited by web page B shown in Fig. 1:</p>
 <p align="center">
-<img src="/assets/images/Page_rank/ex.png" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/ex.png" />
 <figcaption align="center">Fig.1 Example of web graph.</figcaption>
 </p>
 
@@ -289,7 +289,7 @@ Taking it further let’s take an example for calculation the PR of a web page A
 <h2 id="page-rank-algorithm">Page Rank Algorithm</h2>
 <p>Taking it further we and to have a better understanding of how page rank works, we consider a graph (shown by fig 2) of web pages having links shown by the arrow. <br />Note that, if there are web pages with no out link then they do not contribute to the page ranking (they are usually referred to as dangling pages).</p>
 <p align="center">
-<img src="/assets/images/Page_rank/graph.png" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/graph.png" />
 <figcaption align="center">Fig.2</figcaption>
 </p>
 <p>Our aim in now to figure of the PR of individual web pages. Inorder to do so, we need to perform the following steps:</p>
@@ -302,12 +302,12 @@ Taking it further let’s take an example for calculation the PR of a web page A
 <h3 id="step-1">STEP 1</h3>
 <p>Initially, page rank of all the web pages is taken as 1. The weight of the edge is the probability of going from a web page X to Y ( the web page A has 2 out links, therefore, the probability to visit each web page is 1/2 ). After expressing the web graph in terms of probabilities the web graph looks something like:</p>
 <p align="center">
-<img src="/assets/images/Page_rank/graph_prob.png" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/images/Page_rank/graph_prob.png" />
 <figcaption align="center">Fig.3</figcaption>
 </p>
 <p>Probability transition matrix is represented as:</p>
 <p align="center">
-<img src="/assets/images/Page_rank/mat.JPEG" /></p>
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/mat.JPEG" /></p>
 
 <h3 id="step-2">STEP 2</h3>
 <p>The page rank of each web page is determined by applying the PageRank equation. This process is repeated until the algorithm converges i.e. the values of page rank do not change beyond a small value ( know as epsilon usually fixed as 1e-4 ). The damping factor (d) introduced is to add some randomness over the web graph i.e. d is a probability that a user will move to the linked web page and 1-d is the probability of choosing a random web page, it is usually taken as 0.85.</p>
@@ -316,7 +316,7 @@ Taking it further let’s take an example for calculation the PR of a web page A
 </script>
 
 <p align="center">
-<img src="/assets/images/Page_rank/formula.JPEG" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/formula.JPEG" />
 </p>
 <p><br /></p>
 
@@ -325,11 +325,11 @@ Taking it further let’s take an example for calculation the PR of a web page A
 <br />
 The PR(C) can also be calculated by matrix dot product.</p>
 <p align="center">
-<img src="/assets/images/Page_rank/pr_c.JPEG" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/pr_c.JPEG" />
 </p>
 <p>Similarly, extending this for all the web pages we end up with the equation:  <br />  ( * represents matrix multiplication)</p>
 <p align="center">
-<img src="/assets/images/Page_rank/eq.JPEG" />
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/Page_rank/eq.JPEG" />
 </p>
 
 <p>\begin{equation}
@@ -361,7 +361,7 @@ The C matrix of our example can be expressed as the matrix represented above. Al
 <h2 id="references">References</h2>
 <ul>
   <li>
-    <p><a href="https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.htm">Page Rank Explained</a></p>
+    <p><a href="https://www.cs.princeton.edu/~chazelle/courses/BIB/pagerank.html">Page Rank Explained</a></p>
   </li>
   <li>
     <p><a href="https://en.wikipedia.org/wiki/PageRank#Iterative">Wikipedia Pagerank</a></p>

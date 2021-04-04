@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-03T14:30:10+05:30</updated><id>http://localhost:4000/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Understanding PageRank</title><link href="http://localhost:4000/pagerank/" rel="alternate" type="text/html" title="Understanding PageRank" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/pagerank</id><content type="html" xml:base="http://localhost:4000/pagerank/">&lt;p&gt;In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/CodingSpace/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/CodingSpace/" rel="alternate" type="text/html" /><updated>2021-04-04T10:45:14+05:30</updated><id>http://localhost:4000/CodingSpace/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Get Started With Basic Of Tensorflow</title><link href="http://localhost:4000/CodingSpace/tensorflow_part_1/" rel="alternate" type="text/html" title="Get Started With Basic Of Tensorflow" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/tensorflow_part_1</id><content type="html" xml:base="http://localhost:4000/CodingSpace/tensorflow_part_1/">&lt;h1 id=&quot;what-is-tensorflow&quot;&gt;What is TensorFlow?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Open-source library for graph-based numerical computation
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;developed-by-the-google-brain-team&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Developed by the Google Brain Team&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Low and high level APIs
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;addition-multiplication-differentiation&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Addition, multiplication, differentiation&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;machine-learning--deep-learning-models&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Machine learning &amp;amp; deep learning models&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-is-a-tensor&quot;&gt;What is a tensor?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generalization of vectors and matrices&lt;/li&gt;
+  &lt;li&gt;Collection of numbers&lt;/li&gt;
+  &lt;li&gt;Specfic shape&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;overview-of-concepts&quot;&gt;Overview of Concepts&lt;/h2&gt;
+
+&lt;p&gt;TensorFlow gets its name from &lt;strong&gt;tensors&lt;/strong&gt;, which are arrays of arbitrary dimensionality. Using TensorFlow, you can manipulate tensors with a very high number of dimensions. That said, most of the time you will work with one or more of the following low-dimensional tensors:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A &lt;strong&gt;scalar&lt;/strong&gt; is a 0-d array (a 0th-order tensor).  For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;Manikant&quot;&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;5&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;vector&lt;/strong&gt; is a 1-d array (a 1st-order tensor).  For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;[2, 3, 5, 7, 11]&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;[5]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;A &lt;strong&gt;matrix&lt;/strong&gt; is a 2-d array (a 2nd-order tensor).  For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;[[3.1, 8.2, 5.9][4.3, -2.7, 6.5]]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/scalar.png&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;Scaler with dim 0&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/vector.png&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;vector with dim 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/matrix.png&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;Matrix with dim 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;defining-tensors-in-tensorflow&quot;&gt;Defining tensors in TensorFlow&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# 0D Tensor&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 1D Tensor&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,))&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 2D Tensor&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 3D Tensor&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;d3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;defining-constants-in-tensorflow&quot;&gt;Defining constants in TensorFlow&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;A constant is the simplest category of tensor&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Not trainable&lt;/li&gt;
+  &lt;li&gt;Can have any dimension&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define a 2x3 constant.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define a 2x2 constant.&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;defining-and-initializing-variables&quot;&gt;Defining and initializing variables&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Define a variable&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Variable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Variable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;applying-the-addition-operator&quot;&gt;Applying the addition operator&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# Define 0-dimensional tensors&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;B0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define 1-dimensional tensors&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;B1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define 2-dimensional tensors&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;B2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# Applying the addition operator&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Perform tensor addition with add()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;C0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;C1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;C2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;B2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;how-to-perform-multiplication-in-tensorflow&quot;&gt;How to perform multiplication in TensorFlow&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Element-wise multiplication performed using multiply() operation&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;The tensors multiplied must have the same shape&lt;/li&gt;
+  &lt;li&gt;E.g. [1,2,3] and [3,4,5] or [1,2] and [3,4]&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Matrix multiplication performed with matmul() operator&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;The matmul(A,B) operation multiplies A by B&lt;/li&gt;
+  &lt;li&gt;Number of columns of A must equal the number of rows of B&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Import operators from tensorflow&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matmul&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define tensors&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A34&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;A43&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ones&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# What types of operations are valid?&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# multiply(A0, A0) , multiply(A31, A31) , and multiply(A34, A34)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# matmul(A43, A34 ), but not matmul(A43, A43)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning &amp; Machine Learning</summary></entry><entry><title type="html">Understanding PageRank</title><link href="http://localhost:4000/CodingSpace/pagerank/" rel="alternate" type="text/html" title="Understanding PageRank" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/pagerank</id><content type="html" xml:base="http://localhost:4000/CodingSpace/pagerank/">&lt;p&gt;In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Basic Idea behind Page Rank&lt;/li&gt;
@@ -111,7 +234,7 @@ The C matrix of our example can be expressed as the matrix represented above. Al
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/PageRank#Iterative&quot;&gt;Wikipedia Pagerank&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Indexing the web pages</summary></entry><entry><title type="html">Hand Written Digit Classification Using PyTorch</title><link href="http://localhost:4000/mnist/" rel="alternate" type="text/html" title="Hand Written Digit Classification Using PyTorch" /><published>2020-12-22T00:00:00+05:30</published><updated>2020-12-22T00:00:00+05:30</updated><id>http://localhost:4000/mnist</id><content type="html" xml:base="http://localhost:4000/mnist/">&lt;h2 id=&quot;lets-get-familiar-with-pytorch-and-mnist-dataset&quot;&gt;Let’s get familiar with PyTorch and MNIST dataset&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Indexing the web pages</summary></entry><entry><title type="html">Hand Written Digit Classification Using PyTorch</title><link href="http://localhost:4000/CodingSpace/mnist/" rel="alternate" type="text/html" title="Hand Written Digit Classification Using PyTorch" /><published>2020-12-22T00:00:00+05:30</published><updated>2020-12-22T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/mnist</id><content type="html" xml:base="http://localhost:4000/CodingSpace/mnist/">&lt;h2 id=&quot;lets-get-familiar-with-pytorch-and-mnist-dataset&quot;&gt;Let’s get familiar with PyTorch and MNIST dataset&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://yann.lecun.com/exdb/mnist/&quot;&gt;MNIST&lt;/a&gt; database of handwritten digits,has a training set of 60,000 examples, and a test set of 10,000 examples.&lt;/li&gt;
 &lt;/ul&gt;
@@ -263,7 +386,7 @@ The C matrix of our example can be expressed as the matrix represented above. Al
 
 &lt;blockquote&gt;
   &lt;p&gt;Happy Coding&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Confusion Matrix is not so confusing 😂</title><link href="http://localhost:4000/confusion/" rel="alternate" type="text/html" title="Confusion Matrix is not so confusing 😂" /><published>2020-12-19T00:00:00+05:30</published><updated>2020-12-19T00:00:00+05:30</updated><id>http://localhost:4000/confusion_matrix</id><content type="html" xml:base="http://localhost:4000/confusion/">&lt;h1 id=&quot;confusion-matrix-is-not-so-confusing-&quot;&gt;Confusion Matrix is not so confusing 😂&lt;/h1&gt;
+&lt;/blockquote&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Confusion Matrix is not so confusing 😂</title><link href="http://localhost:4000/CodingSpace/confusion/" rel="alternate" type="text/html" title="Confusion Matrix is not so confusing 😂" /><published>2020-12-19T00:00:00+05:30</published><updated>2020-12-19T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/confusion_matrix</id><content type="html" xml:base="http://localhost:4000/CodingSpace/confusion/">&lt;h1 id=&quot;confusion-matrix-is-not-so-confusing-&quot;&gt;Confusion Matrix is not so confusing 😂&lt;/h1&gt;
 &lt;h3 id=&quot;lets-dig-into-it-&quot;&gt;Let’s dig into it :&lt;/h3&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;In field of machine learning Confusion matrix is often used to visualize the performace of classification algorithm. It is also known as error matrix. &lt;/code&gt;&lt;/p&gt;
@@ -359,7 +482,7 @@ actual yes/total = 105/165 = 0.64&lt;/li&gt;
 &lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;classification_report&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;actual&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predicted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;labels&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Classification report : &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/out.png&quot; alt=&quot;output&quot; /&gt;&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Face Mask Detection Using Tensorflow</title><link href="http://localhost:4000/mask/" rel="alternate" type="text/html" title="Face Mask Detection Using Tensorflow" /><published>2020-12-02T00:00:00+05:30</published><updated>2020-12-02T00:00:00+05:30</updated><id>http://localhost:4000/mask_detection</id><content type="html" xml:base="http://localhost:4000/mask/">&lt;h1 id=&quot;welcome-to-face-mask-detection-&quot;&gt;Welcome to Face Mask Detection 👋&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/out.png&quot; alt=&quot;output&quot; /&gt;&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Face Mask Detection Using Tensorflow</title><link href="http://localhost:4000/CodingSpace/mask/" rel="alternate" type="text/html" title="Face Mask Detection Using Tensorflow" /><published>2020-12-02T00:00:00+05:30</published><updated>2020-12-02T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/mask_detection</id><content type="html" xml:base="http://localhost:4000/CodingSpace/mask/">&lt;h1 id=&quot;welcome-to-face-mask-detection-&quot;&gt;Welcome to Face Mask Detection 👋&lt;/h1&gt;
 &lt;h3 id=&quot;-homepage&quot;&gt;🏠 &lt;a href=&quot;https://github.com/devil-cyber/Mask-Detection&quot;&gt;Homepage&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000&quot; alt=&quot;Version&quot; /&gt;
 &lt;a href=&quot;https://github.com/devil-cyber/Mask-Detection/README.md&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/documentation-yes-brightgreen.svg&quot; alt=&quot;Documentation&quot; /&gt;&lt;/a&gt;
@@ -610,7 +733,7 @@ Press 'q' to quit.
 
 &lt;p&gt;Give a ⭐️ if this project helped you!&lt;/p&gt;
 
-&lt;hr /&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Linear Regression At A Glance</title><link href="http://localhost:4000/linear_regression/" rel="alternate" type="text/html" title="Linear Regression At A Glance" /><published>2020-11-24T14:23:29+05:30</published><updated>2020-11-24T14:23:29+05:30</updated><id>http://localhost:4000/linear_regression</id><content type="html" xml:base="http://localhost:4000/linear_regression/">&lt;p&gt;Linear Regression is one of the most fundamental algorithms in the Machine Learning world. It is the door to the magical world ahead.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Linear Regression At A Glance</title><link href="http://localhost:4000/CodingSpace/linear_regression/" rel="alternate" type="text/html" title="Linear Regression At A Glance" /><published>2020-11-24T14:23:29+05:30</published><updated>2020-11-24T14:23:29+05:30</updated><id>http://localhost:4000/CodingSpace/linear_regression</id><content type="html" xml:base="http://localhost:4000/CodingSpace/linear_regression/">&lt;p&gt;Linear Regression is one of the most fundamental algorithms in the Machine Learning world. It is the door to the magical world ahead.&lt;/p&gt;
 &lt;h2 id=&quot;what-is-regression-analysis&quot;&gt;What is Regression Analysis?&lt;/h2&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Regression&lt;/code&gt; in &lt;code class=&quot;highlighter-rouge&quot;&gt;statistics&lt;/code&gt; is the process of predicting a &lt;code class=&quot;highlighter-rouge&quot;&gt;Label(or Dependent Variable)&lt;/code&gt; based on the &lt;code class=&quot;highlighter-rouge&quot;&gt;features(Independent Variables)&lt;/code&gt; at hand.&lt;/p&gt;
@@ -684,7 +807,7 @@ Hence, the sum of the square of residuals is:&lt;/p&gt;
   &lt;p&gt;This conevrgence will take will until it reached to it’s minimum value and give us the most suitable value of cofficients&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Happy Coding&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Create Your First Server Using Node.js &amp;amp; Express</title><link href="http://localhost:4000/server/" rel="alternate" type="text/html" title="Create Your First Server Using Node.js &amp; Express" /><published>2020-11-23T00:00:00+05:30</published><updated>2020-11-23T00:00:00+05:30</updated><id>http://localhost:4000/nodejs_server</id><content type="html" xml:base="http://localhost:4000/server/">&lt;p&gt;Let’s create our first &lt;code class=&quot;highlighter-rouge&quot;&gt;Node.js&lt;/code&gt; server using &lt;code class=&quot;highlighter-rouge&quot;&gt;express framework&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Happy Coding&lt;/p&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Create Your First Server Using Node.js &amp;amp; Express</title><link href="http://localhost:4000/CodingSpace/server/" rel="alternate" type="text/html" title="Create Your First Server Using Node.js &amp; Express" /><published>2020-11-23T00:00:00+05:30</published><updated>2020-11-23T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/nodejs_server</id><content type="html" xml:base="http://localhost:4000/CodingSpace/server/">&lt;p&gt;Let’s create our first &lt;code class=&quot;highlighter-rouge&quot;&gt;Node.js&lt;/code&gt; server using &lt;code class=&quot;highlighter-rouge&quot;&gt;express framework&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Prerequisite&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -746,7 +869,7 @@ Hence, the sum of the square of residuals is:&lt;/p&gt;
 Bam in browser you will see &lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World from our first Server&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;happy-coding&quot;&gt;Happy Coding&lt;/h4&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Web Development</summary></entry><entry><title type="html">Deep Dive To Convolution Neural Network</title><link href="http://localhost:4000/cnn/" rel="alternate" type="text/html" title="Deep Dive To Convolution Neural Network" /><published>2020-11-22T00:00:00+05:30</published><updated>2020-11-22T00:00:00+05:30</updated><id>http://localhost:4000/cnn</id><content type="html" xml:base="http://localhost:4000/cnn/">&lt;p&gt;LeNet is a &lt;code class=&quot;highlighter-rouge&quot;&gt;convolutional neural network structure&lt;/code&gt; proposed by &lt;a href=&quot;http://yann.lecun.com/&quot;&gt;Yann Lecun&lt;/a&gt; in 1998. It was the first big breakthrough in the world of &lt;code class=&quot;highlighter-rouge&quot;&gt;deep learning and computer vision&lt;/code&gt;. In general, LeNet refers to LeNet-5.This architecture was the first time applied over the &lt;a href=&quot;http://yann.lecun.com/exdb/mnist/&quot;&gt;MNIST&lt;/a&gt;  dataset to recognize the handwritten character.&lt;/p&gt;
+&lt;h4 id=&quot;happy-coding&quot;&gt;Happy Coding&lt;/h4&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Web Development</summary></entry><entry><title type="html">Deep Dive To Convolution Neural Network</title><link href="http://localhost:4000/CodingSpace/cnn/" rel="alternate" type="text/html" title="Deep Dive To Convolution Neural Network" /><published>2020-11-22T00:00:00+05:30</published><updated>2020-11-22T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/cnn</id><content type="html" xml:base="http://localhost:4000/CodingSpace/cnn/">&lt;p&gt;LeNet is a &lt;code class=&quot;highlighter-rouge&quot;&gt;convolutional neural network structure&lt;/code&gt; proposed by &lt;a href=&quot;http://yann.lecun.com/&quot;&gt;Yann Lecun&lt;/a&gt; in 1998. It was the first big breakthrough in the world of &lt;code class=&quot;highlighter-rouge&quot;&gt;deep learning and computer vision&lt;/code&gt;. In general, LeNet refers to LeNet-5.This architecture was the first time applied over the &lt;a href=&quot;http://yann.lecun.com/exdb/mnist/&quot;&gt;MNIST&lt;/a&gt;  dataset to recognize the handwritten character.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.inblog.in/user/uploads/RxR3t6nBckHfcw9hcc8kn8Ejv3zOIw.gif&quot; alt=&quot;gif&quot; /&gt;&lt;/p&gt;
 &lt;h1 style=&quot;color:grey&quot;&gt;Architecture&lt;/h1&gt;
@@ -815,7 +938,7 @@ Bam in browser you will see &lt;code class=&quot;highlighter-rouge&quot;&gt;Hell
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Basic Mathematical Algorithm Used in Programming</title><link href="http://localhost:4000/programming/" rel="alternate" type="text/html" title="Basic Mathematical Algorithm Used in Programming " /><published>2020-01-12T00:00:00+05:30</published><updated>2020-01-12T00:00:00+05:30</updated><id>http://localhost:4000/mathematics_algorithm</id><content type="html" xml:base="http://localhost:4000/programming/">&lt;h3 id=&quot;hey-folks-this-is-a-approach-to-get-started-with-the-simple-mathematical-algorithm-using-python-starting-with-the-basic-one&quot;&gt;Hey! folks this is a approach to get started with the simple &lt;code class=&quot;highlighter-rouge&quot;&gt;mathematical algorithm&lt;/code&gt; using python starting with the basic one.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Basic Mathematical Algorithm Used in Programming</title><link href="http://localhost:4000/CodingSpace/programming/" rel="alternate" type="text/html" title="Basic Mathematical Algorithm Used in Programming " /><published>2020-01-12T00:00:00+05:30</published><updated>2020-01-12T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/mathematics_algorithm</id><content type="html" xml:base="http://localhost:4000/CodingSpace/programming/">&lt;h3 id=&quot;hey-folks-this-is-a-approach-to-get-started-with-the-simple-mathematical-algorithm-using-python-starting-with-the-basic-one&quot;&gt;Hey! folks this is a approach to get started with the simple &lt;code class=&quot;highlighter-rouge&quot;&gt;mathematical algorithm&lt;/code&gt; using python starting with the basic one.&lt;/h3&gt;
 
 &lt;h4 style=&quot;color:orange;&quot;&gt;Check if number is palindrome&lt;/h4&gt;
 

@@ -14,11 +14,11 @@ toc: false
 ---
 
 # What is TensorFlow?
-* **Open-source library for graph-based numerical computation**
-* **Developed by the Google Brain Team**
-* **Low and high level APIs**
- - Addition, multiplication, differentiation
- - Machine learning & deep learning models
+* Open-source library for graph-based numerical computation
+  - ## `Developed by the Google Brain Team`
+* Low and high level APIs
+  - ## `Addition, multiplication, differentiation`
+  - ## `Machine learning & deep learning models`
 
 
 # What is a tensor?
@@ -34,12 +34,15 @@ TensorFlow gets its name from **tensors**, which are arrays of arbitrary dimensi
   * A **vector** is a 1-d array (a 1st-order tensor).  For example, `[2, 3, 5, 7, 11]` or `[5]`
   * A **matrix** is a 2-d array (a 2nd-order tensor).  For example, `[[3.1, 8.2, 5.9][4.3, -2.7, 6.5]]`
 
-**Scaler with dim 0**
+
 ![](https://www.tensorflow.org/guide/images/tensor/scalar.png)
-**vector with dim 1**
+**Scaler with dim 0**
+
 ![](https://www.tensorflow.org/guide/images/tensor/vector.png)
-**Matrix with dim 2**
+**vector with dim 1**
+
 ![](https://www.tensorflow.org/guide/images/tensor/matrix.png)
+**Matrix with dim 2**
 
 # Defining tensors in TensorFlow
 

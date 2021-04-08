@@ -133,9 +133,9 @@ Ginni impurity value lies between 0 and 1, 0 being no impurity and 1 denoting ra
 The node for which the Ginni impurity is least is selected as the root node to split.
 
 
-A tree which is splitted on basis of ginni impurity value looks like:
+A tree which is splinted on basis of ginni impurity value looks like:
 
-<img src="https://devil-cyber.github.io/CodingSpace/assets/images/tree_example.PNG" width="900">
+<img src="https://devil-cyber.github.io/CodingSpace/assets/images/tree_example.png" width="900">
 
 
 
@@ -1127,39 +1127,7 @@ principal_x
       <td>-0.607970</td>
       <td>-0.247640</td>
     </tr>
-    <tr>
-      <td>1596</td>
-      <td>-1.456129</td>
-      <td>0.311746</td>
-      <td>1.124239</td>
-      <td>0.491877</td>
-      <td>0.193716</td>
-      <td>-0.506410</td>
-      <td>-0.231082</td>
-      <td>0.079382</td>
-    </tr>
-    <tr>
-      <td>1597</td>
-      <td>-2.270518</td>
-      <td>0.979791</td>
-      <td>0.627965</td>
-      <td>0.639770</td>
-      <td>0.067735</td>
-      <td>-0.860408</td>
-      <td>-0.321487</td>
-      <td>-0.468876</td>
-    </tr>
-    <tr>
-      <td>1598</td>
-      <td>-0.426975</td>
-      <td>-0.536690</td>
-      <td>1.628955</td>
-      <td>-0.391716</td>
-      <td>0.450482</td>
-      <td>-0.496154</td>
-      <td>1.189132</td>
-      <td>0.042176</td>
-    </tr>
+    
   </tbody>
 </table>
 <p>1599 rows × 8 columns</p>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/CodingSpace/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/CodingSpace/" rel="alternate" type="text/html" /><updated>2021-04-08T09:58:49+05:30</updated><id>http://localhost:4000/CodingSpace/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Get Started Tensorflow</title><link href="http://localhost:4000/CodingSpace/TensorFlow/" rel="alternate" type="text/html" title="Get Started Tensorflow" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/tensorflow_part_1</id><content type="html" xml:base="http://localhost:4000/CodingSpace/TensorFlow/">&lt;h1 id=&quot;what-is-tensorflow&quot;&gt;What is TensorFlow?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/CodingSpace/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/CodingSpace/" rel="alternate" type="text/html" /><updated>2021-04-08T16:05:47+05:30</updated><id>http://localhost:4000/CodingSpace/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Get Started With Tensorflow</title><link href="http://localhost:4000/CodingSpace/TensorFlow/" rel="alternate" type="text/html" title="Get Started With Tensorflow" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/tensorflow_part_1</id><content type="html" xml:base="http://localhost:4000/CodingSpace/TensorFlow/">&lt;h1 id=&quot;what-is-tensorflow&quot;&gt;What is TensorFlow?&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Open-source library for graph-based numerical computation&lt;/strong&gt;&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Developed by the Google Brain Team&lt;/strong&gt;&lt;/li&gt;
@@ -1094,7 +1094,1210 @@ Bam in browser you will see &lt;code class=&quot;highlighter-rouge&quot;&gt;Hell
 &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pred&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;argmax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Basic Mathematical Algorithm Used in Programming</title><link href="http://localhost:4000/CodingSpace/programming/" rel="alternate" type="text/html" title="Basic Mathematical Algorithm Used in Programming " /><published>2020-01-12T00:00:00+05:30</published><updated>2020-01-12T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/mathematics_algorithm</id><content type="html" xml:base="http://localhost:4000/CodingSpace/programming/">&lt;h3 id=&quot;hey-folks-this-is-a-approach-to-get-started-with-the-simple-mathematical-algorithm-using-python-starting-with-the-basic-one&quot;&gt;Hey! folks this is a approach to get started with the simple &lt;code class=&quot;highlighter-rouge&quot;&gt;mathematical algorithm&lt;/code&gt; using python starting with the basic one.&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning</summary></entry><entry><title type="html">Decision Tree</title><link href="http://localhost:4000/CodingSpace/decision-tree/" rel="alternate" type="text/html" title="Decision Tree" /><published>2020-01-22T00:00:00+05:30</published><updated>2020-01-22T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/DecisionTree</id><content type="html" xml:base="http://localhost:4000/CodingSpace/decision-tree/">&lt;h2 id=&quot;decision-tree&quot;&gt;Decision Tree&lt;/h2&gt;
+
+&lt;p&gt;Decision tree algorithm is one of the most versatile algorithms in machine learning which can perform both classification and regression analysis. It is very powerful and works great with complex datasets. Apart from that, it is very easy to understand and read. That makes it more popular to use. When coupled with ensemble techniques – which we will learn very soon- it performs even better.
+As the name suggests, this algorithm works by dividing the whole dataset into a tree-like structure based on some rules and conditions and then gives prediction based on those conditions.
+Let’s understand the approach to decision tree with a basic scenario. 
+Suppose it’s Friday night and you are not able to decide if you should go out or stay at home. Let the decision tree decide it for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/Decision_tree1.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Although we may or may not use the decision tree for such decisions, this was a basic example to help you understand how a decision tree makes a decision.
+So how did it work?&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;It selects a root node based on a given condition, e.g. our root node was chosen as time &amp;gt;10 pm.&lt;/li&gt;
+  &lt;li&gt;Then, the root node was split into child notes based on the given condition. The right child node in the above figure fulfilled the condition, so no more questions were asked.&lt;/li&gt;
+  &lt;li&gt;The left child node didn’t fulfil the condition, so again it was split based on a new condition.&lt;/li&gt;
+  &lt;li&gt;This process continues till all the conditions are met or if you have predefined the depth of your tree, e.g. the depth of our tree is 3, and it reached there when all the conditions were exhausted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let’s see how the parent nodes and condition is chosen for the splitting to work.&lt;/p&gt;
+
+&lt;h4 id=&quot;decision-tree-for-regression&quot;&gt;Decision Tree for Regression&lt;/h4&gt;
+&lt;p&gt;When performing regression with a decision tree, we try to divide the given values of X into distinct and non-overlapping regions, e.g. for a set of possible values X1, X2,…, Xp; we will try to divide them into J distinct and non-overlapping regions R1, R2, . . . , RJ.
+For a given observation falling into the region Rj, the prediction is equal to the mean of the response(y) values for each training observations(x) in the region Rj. 
+The regions R1,R2, . . . , RJ  are selected in a way to reduce the following sum of squares of residuals:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/formula1.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where, yrj (second term) is the mean of all the response variables in the region ‘j’.&lt;/p&gt;
+
+&lt;h4 id=&quot;recursive-binary-splittinggreedy-approach&quot;&gt;Recursive binary splitting(Greedy approach)&lt;/h4&gt;
+&lt;p&gt;As mentioned above, we try to divide the X values into j regions, but it is very expensive in terms of computational time to try to fit every set of X values into j regions. Thus, decision tree opts for a top-down greedy approach in which nodes are divided into two regions based on the given condition, i.e. not every node will be split but the ones which satisfy the condition are split into two branches. It is called greedy because it does the best split at a given step at that point of time rather than looking for splitting a step for a better tree in upcoming steps. It decides a threshold value(say s) to divide the observations into different regions(j) such that the RSS for Xj&amp;gt;= s and Xj &amp;lt;s is minimum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/formula2.png&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here for the above equation, j and s are found such that this equation has the minimum value.
+The regions R1, R2 are selected based on that value of s and j such that the equation above has the minimum value.
+Similarly, more regions are split out of the regions created above based on some condition with the same logic. This continues until a stopping criterion (predefined) is achieved.
+Once all the regions are split, the prediction is made based on the mean of observations in that region.&lt;/p&gt;
+
+&lt;p&gt;The process mentioned above has a high chance of overfitting the training data as it will be very complex.&lt;/p&gt;
+
+&lt;h4 id=&quot;tree-pruning&quot;&gt;Tree Pruning&lt;/h4&gt;
+&lt;p&gt;Tree pruning is the method of trimming down a full tree (obtained through the above process) to reduce the complexity and variance in the data. Just as we regularized linear regression, we can also regularize the decision tree model by adding a new term.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/formula3.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where, T  is the subtree which is a subset of the full tree T0
+And α is the non-negative tuning parameter which penalises the MSE with an increase in tree length.
+By using cross-validation, such values of α and T are selected for which our model gives the lowest test error rate.
+This is how the decision tree regression model works. Let’s now see the working algorithm of doing classification using a decision tree.
+Greedy Algorithm
+As per Hands-on machine learning book “greedy algorithm greedily searches for an optimum split at the top level, then repeats the process at each level. It does not check whether or not the split will lead to the lowest possible impurity several levels down. A greedy algorithm often produces a reasonably good solution, but it is not guaranteed to be the optimal solution.”&lt;/p&gt;
+
+&lt;h4 id=&quot;post-pruning&quot;&gt;Post-pruning&lt;/h4&gt;
+
+&lt;p&gt;Post-pruning, also known as backward pruning, is the process where the decision tree is generated first and then the non-significant branches are removed. Cross-validation set of data is used to check the effect of pruning and tests whether expanding a node will make an improvement or not. If any improvement is there then we continue by expanding that node else if there is reduction in accuracy then the node not be expanded and should be converted in a leaf node.&lt;/p&gt;
+
+&lt;h4 id=&quot;pre-pruning&quot;&gt;Pre-pruning&lt;/h4&gt;
+
+&lt;p&gt;Pre-pruning, also known as forward pruning, stops the non-significant branches from generating. It uses a condition to decide when should it terminate splitting of some of the branches prematurely as the tree is generated.&lt;/p&gt;
+
+&lt;h3 id=&quot;classification-trees&quot;&gt;Classification Trees&lt;/h3&gt;
+
+&lt;p&gt;Regression trees are used for quantitative data. In the case of qualitative data or categorical data, we use classification trees.  In regression trees, we split the nodes based on RSS criteria, but in classification, it is done using classification error rate, Gini impurity and entropy.
+Let’s understand these terms in detail.&lt;/p&gt;
+
+&lt;h4 id=&quot;entropy&quot;&gt;Entropy&lt;/h4&gt;
+&lt;p&gt;Entropy is the measure of randomness in the data. In other words, it gives the impurity present in the dataset.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/entropy.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we split our nodes into two regions and put different observations in both the regions, the main goal is to reduce the entropy i.e. reduce the randomness in the region and divide our data cleanly than it was in the previous node. If splitting the node doesn’t lead into entropy reduction, we try to split based on a different condition, or we stop. 
+A region is clean (low entropy) when it contains data with the same labels and random if there is a mixture of labels present (high entropy).
+Let’s suppose there are ‘m’ observations and we need to classify them into categories 1 and 2.
+Let’s say that category 1 has ‘n’ observations and category 2 has ‘m-n’ observations.&lt;/p&gt;
+
+&lt;p&gt;p= n/m  and    q = m-n/m = 1-p&lt;/p&gt;
+
+&lt;p&gt;then, entropy for the given set is:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      E = -p*log2(p) – q*log2(q) 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When all the observations belong to category 1, then p = 1 and all observations belong to category 2, then p =0, int both cases E =0, as there is no randomness in the categories.
+If half of the observations are in category 1 and another half in category 2, then p =1/2 and q =1/2, and the entropy is maximum, E =1.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/entropy1.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;information-gain&quot;&gt;Information Gain&lt;/h4&gt;
+&lt;p&gt;Information gain calculates the decrease in entropy after splitting a node. It is the difference between entropies before and after the split. The more the information gain, the more entropy is removed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/info_gain.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Where, T is the parent node before split and X is the split node from T.&lt;/p&gt;
+
+&lt;p&gt;A tree which is splitted on basis of entropy and information gain value looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/entropy_tree.png&quot; width=&quot;900&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;ginni-impurity&quot;&gt;Ginni Impurity&lt;/h4&gt;
+&lt;p&gt;According to wikipedia, ‘Gini impurity is a measure of how often a randomly chosen element from the set would be incorrectly labelled if it was randomly labelled according to the distribution of labels in the subset.’
+It is calculated by multiplying the probability that a given observation is classified into the correct class and sum of all the probabilities when that particular observation is classified into the wrong class.
+Let’s suppose there are k number of classes and an observation belongs to the class ‘i’, then Ginni impurity is given as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/ginni.png&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ginni impurity value lies between 0 and 1, 0 being no impurity and 1 denoting random distribution.
+The node for which the Ginni impurity is least is selected as the root node to split.&lt;/p&gt;
+
+&lt;p&gt;A tree which is splitted on basis of ginni impurity value looks like:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/tree_example.PNG&quot; width=&quot;900&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;maths-behind-decision-tree-classifier&quot;&gt;Maths behind Decision Tree Classifier&lt;/h3&gt;
+&lt;p&gt;Before we see the python implementation of decision tree. let’s first understand the math behind the decision tree classfication. We will see how all the above mentioned terms are used for splitting.&lt;/p&gt;
+
+&lt;p&gt;We will use a simple dataset which contains information about students of different classes and gender and see whether they stay in school’s hostel or not.&lt;/p&gt;
+
+&lt;p&gt;This is how our data set looks like :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/data_class.PNG&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s try and understand how the root node is selected by calcualting gini impurity. We will use the above mentioned data.&lt;/p&gt;
+
+&lt;p&gt;We have two features which we can use for nodes: “Class” and “Gender”.
+We will calculate gini impurity for each of the features and then select that feature which has least gini impurity.&lt;/p&gt;
+
+&lt;p&gt;Let’s review the formula for calculating ginni impurity:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/gini.PNG&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with class, we will try to gini impurity for all different values in “class”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/1.png&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/2.png&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/3.1.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/3.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/4.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/5.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/6.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/7.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/8.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is how our Decision tree node is selected by calculating gini impurity for each node individually.
+If the number of features increases, then we just need to repeat the same steps after the selection of the root node.&lt;/p&gt;
+
+&lt;p&gt;We will try and find the root nodes for the same dataset by calculating entropy and information gain.&lt;/p&gt;
+
+&lt;p&gt;DataSet:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/data_class.PNG&quot; width=&quot;200&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have two features and we will try to choose the root node by calculating the information gain by splitting each feature.&lt;/p&gt;
+
+&lt;p&gt;Let’ review the formula for entropy and information gain:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/formula_entropy.PNG&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/inform_gain.PNG&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s start with feature “class” :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/9.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/10.1.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/11.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/12.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/13.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’ see the information gain from feature “gender” :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/10.2.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/14.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/15.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/16.PNG&quot; width=&quot;500&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;different-algorithms-for-decision-tree&quot;&gt;Different Algorithms for Decision Tree&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ID3 (Iterative Dichotomiser) : It is one of the algorithms used to construct decision tree for classification. It uses Information gain as the criteria for finding the root nodes and splitting them. It only accepts categorical attributes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;C4.5 : It is an extension of ID3 algorithm, and better than ID3 as it deals both continuous and discreet values.It is also used for classfication purposes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Classfication and Regression Algorithm(CART) : It is the most popular algorithm used for constructing decison trees. It uses ginni impurity as the default calculation for selecting root nodes, however one can use “entropy” for criteria as well. This algorithm works on both regression as well as classfication problems. We will use this algorithm in our pyhton implementation.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Entropy and Ginni impurity can be used reversibly. It doesn’t affects the result much. Although, ginni is easier to compute than entropy, since entropy has a log term calculation. That’s why CART algorithm uses ginni as the default algorithm.&lt;/p&gt;
+
+&lt;p&gt;If we plot ginni vs entropy graph, we can see there is not much difference between them:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/example/entropyVsgini.PNG&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
+
+&lt;h5 id=&quot;advantages-of-decision-tree&quot;&gt;Advantages of Decision Tree:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;It can be used for both Regression and Classification problems.&lt;/li&gt;
+  &lt;li&gt;Decision Trees are very easy to grasp as the rules of splitting is clearly mentioned.&lt;/li&gt;
+  &lt;li&gt;Complex decision tree models are very simple when visualized. It can be understood just by visualising.&lt;/li&gt;
+  &lt;li&gt;Scaling and normalization are not needed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;disadvantages-of-decision-tree&quot;&gt;Disadvantages of Decision Tree:&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A small change in data can cause instability in the model because of the greedy approach.&lt;/li&gt;
+  &lt;li&gt;Probability of overfitting is very high for Decision Trees.&lt;/li&gt;
+  &lt;li&gt;It takes more time to train a decision tree model than other classification algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;cross-validation&quot;&gt;Cross-Validation&lt;/h1&gt;
+
+&lt;p&gt;Suppose you train a model on a given dataset using any specific algorithm. You tried to find the accuracy of the trained model using the same training data and found the accuracy to be 95% or maybe even 100%. What does this mean? Is your model ready for prediction? The answer is no.
+Why? Because your model has trained itself on the given data, i.e. it knows the data and it has generalized over it very well. But when you try and predict over a new set of data, it’s most likely to give you very bad accuracy, because it has never seen the data before and thus it fails to generalizes well over it. This is the problem of overfitting. 
+To tackle such problem, Cross-validation comes into the picture. Cross-validation is a resampling technique with a basic idea of dividing the training dataset into two parts i.e. train and test. On one part(train) you try to train the model and on the second part(test) i.e. the data which is unseen for the model, you make the prediction and check how well your model works on it. If the model works with good accuracy on your test data, it means that the model has not overfitted the training data and can be trusted with the prediction, whereas if it performs with bad accuracy then our model is not to be trusted and we need to tweak our algorithm.&lt;/p&gt;
+
+&lt;p&gt;Let’s see the different approaches of Cross-Validation:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hold Out Method:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It is the most basic of the CV techniques. It simply divides the dataset into two sets of training and test. The training dataset is used to train the model and then test data is fitted in the trained model to make predictions. We check the accuracy and assess our model on that basis. This method is used as it is computationally less costly. But the evaluation based on the Hold-out set can have a high variance because it depends heavily on which data points end up in the training set and which in test data. The evaluation will be different every time this division changes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;k-fold Cross-Validation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/cv1.png&quot; width=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;img_src:Wikipedia&lt;/p&gt;
+
+&lt;p&gt;To tackle the high variance of Hold-out method, the k-fold method is used. The idea is simple, divide the whole dataset into ‘k’ sets preferably of equal sizes. Then the first set is selected as the test set and the rest ‘k-1’ sets are used to train the data. Error is calculated for this particular dataset.
+Then the steps are repeated, i.e. the second set is selected as the test data, and the remaining ‘k-1’ sets are used as the training data. Again, the error is calculated. Similarly, the process continues for ‘k’ times. In the end, the CV error is given as the mean of the total errors calculated individually, mathematically given as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/cv2.png&quot; width=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The variance in error decreases with the increase in ‘k’. The disadvantage of k-fold cv is that it is computationally expensive as the algorithm runs from scratch for ‘k’ times.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Leave One Out Cross Validation (LOOCV)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/cv3.png&quot; width=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LOOCV is a special case of k-fold CV, where k becomes equal to n (number of observations). So instead of creating two subsets, it selects a single observation as a test data and rest of data as the training data. The error is calculated for this test observations. Now, the second observation is selected as test data, and the rest of the data is used as the training set. Again, the error is calculated for this particular test observation. This process continues ‘n’ times and in the end, CV error is calculated as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/cv4.png&quot; width=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;bias-variance-tradeoff-for-k-fold-cv-loocv-and-holdout-set-cv&quot;&gt;Bias Variance tradeoff for k-fold CV, LOOCV and Holdout Set CV&lt;/h3&gt;
+
+&lt;p&gt;There is a very good explanation given in the ISLR Book as given below:&lt;/p&gt;
+
+&lt;p&gt;A k-fold CV with k &amp;lt; n has a computational advantage to LOOCV. But putting computational issues aside,
+a less obvious but potentially more important advantage of k-fold CV is that it often gives more accurate estimates of the test error rate than does LOOCV.
+The validation set approach can lead to overestimates of the test error rate since in this approach the
+the training set used to fit the statistical learning method contains only half the observations of the entire data set. Using this logic, it is not hard to see that LOOCV will give approximately unbiased estimates of the test error since each training set contains n − 1 observations, which is almost as many as the number of observations in the full data set. And performing k-fold CV for, say, k = 5 or k = 10 will lead to an intermediate level of bias since each training set contains (k − 1)n/k observations—fewer than
+in the LOOCV approach, but substantially more than in the validation set approach. Therefore, from the perspective of bias reduction, it is clear that LOOCV is to be preferred to k-fold CV. However, we know that bias is not the only source for concern in an estimating procedure; we must also consider the procedure’s variance. It turns out that LOOCV has higher variance than does k-fold CV with k &amp;lt; n. Why
+is this the case? When we perform LOOCV, we are in effect averaging the outputs of n fitted models, each of which is trained on an almost identical set of observations; therefore, these outputs are highly (positively) correlated with each other. In contrast, when we perform k-fold CV with k &amp;lt; n, we are averaging the outputs of k fitted models that are somewhat less correlated with each other since the overlap between the training sets in each model is smaller. Since the mean of many highly correlated quantities has higher variance than does the mean of many quantities that are not as highly correlated, the test error estimate resulting from LOOCV tends to have higher variance than does the test error estimate resulting from k-fold CV.&lt;/p&gt;
+
+&lt;h3 id=&quot;implementation-in-python&quot;&gt;Implementation in Python&lt;/h3&gt;
+
+&lt;p&gt;we will use Sklearn module to implement decision tree algorithm. 
+Sklearn uses CART (classification and Regression trees) algorithm and by default it uses Gini impurity as a criteria to split the nodes.&lt;/p&gt;
+
+&lt;p&gt;There are other algorithms like ID3, C4.5, Chi-square etc.&lt;/p&gt;
+
+&lt;p&gt;We will see the use of CART in following implementation.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;graphviz&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;export_graphviz&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tree&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.model_selection&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.preprocessing&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.metrics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;accuracy_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;confusion_matrix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roc_curve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roc_auc_score&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.externals.six&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StringIO&lt;/span&gt;  
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;IPython.display&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Image&lt;/span&gt;  
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.tree&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;export_graphviz&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pydotplus&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;winequality_red.csv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;fixed acidity&lt;/th&gt;
+      &lt;th&gt;volatile acidity&lt;/th&gt;
+      &lt;th&gt;citric acid&lt;/th&gt;
+      &lt;th&gt;residual sugar&lt;/th&gt;
+      &lt;th&gt;chlorides&lt;/th&gt;
+      &lt;th&gt;free sulfur dioxide&lt;/th&gt;
+      &lt;th&gt;total sulfur dioxide&lt;/th&gt;
+      &lt;th&gt;density&lt;/th&gt;
+      &lt;th&gt;pH&lt;/th&gt;
+      &lt;th&gt;sulphates&lt;/th&gt;
+      &lt;th&gt;alcohol&lt;/th&gt;
+      &lt;th&gt;quality&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;7.4&lt;/td&gt;
+      &lt;td&gt;0.700&lt;/td&gt;
+      &lt;td&gt;0.00&lt;/td&gt;
+      &lt;td&gt;1.9&lt;/td&gt;
+      &lt;td&gt;0.076&lt;/td&gt;
+      &lt;td&gt;11.0&lt;/td&gt;
+      &lt;td&gt;34.0&lt;/td&gt;
+      &lt;td&gt;0.99780&lt;/td&gt;
+      &lt;td&gt;3.51&lt;/td&gt;
+      &lt;td&gt;0.56&lt;/td&gt;
+      &lt;td&gt;9.4&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;7.8&lt;/td&gt;
+      &lt;td&gt;0.880&lt;/td&gt;
+      &lt;td&gt;0.00&lt;/td&gt;
+      &lt;td&gt;2.6&lt;/td&gt;
+      &lt;td&gt;0.098&lt;/td&gt;
+      &lt;td&gt;25.0&lt;/td&gt;
+      &lt;td&gt;67.0&lt;/td&gt;
+      &lt;td&gt;0.99680&lt;/td&gt;
+      &lt;td&gt;3.20&lt;/td&gt;
+      &lt;td&gt;0.68&lt;/td&gt;
+      &lt;td&gt;9.8&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;7.8&lt;/td&gt;
+      &lt;td&gt;0.760&lt;/td&gt;
+      &lt;td&gt;0.04&lt;/td&gt;
+      &lt;td&gt;2.3&lt;/td&gt;
+      &lt;td&gt;0.092&lt;/td&gt;
+      &lt;td&gt;15.0&lt;/td&gt;
+      &lt;td&gt;54.0&lt;/td&gt;
+      &lt;td&gt;0.99700&lt;/td&gt;
+      &lt;td&gt;3.26&lt;/td&gt;
+      &lt;td&gt;0.65&lt;/td&gt;
+      &lt;td&gt;9.8&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;11.2&lt;/td&gt;
+      &lt;td&gt;0.280&lt;/td&gt;
+      &lt;td&gt;0.56&lt;/td&gt;
+      &lt;td&gt;1.9&lt;/td&gt;
+      &lt;td&gt;0.075&lt;/td&gt;
+      &lt;td&gt;17.0&lt;/td&gt;
+      &lt;td&gt;60.0&lt;/td&gt;
+      &lt;td&gt;0.99800&lt;/td&gt;
+      &lt;td&gt;3.16&lt;/td&gt;
+      &lt;td&gt;0.58&lt;/td&gt;
+      &lt;td&gt;9.8&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;7.4&lt;/td&gt;
+      &lt;td&gt;0.700&lt;/td&gt;
+      &lt;td&gt;0.00&lt;/td&gt;
+      &lt;td&gt;1.9&lt;/td&gt;
+      &lt;td&gt;0.076&lt;/td&gt;
+      &lt;td&gt;11.0&lt;/td&gt;
+      &lt;td&gt;34.0&lt;/td&gt;
+      &lt;td&gt;0.99780&lt;/td&gt;
+      &lt;td&gt;3.51&lt;/td&gt;
+      &lt;td&gt;0.56&lt;/td&gt;
+      &lt;td&gt;9.4&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1594&lt;/td&gt;
+      &lt;td&gt;6.2&lt;/td&gt;
+      &lt;td&gt;0.600&lt;/td&gt;
+      &lt;td&gt;0.08&lt;/td&gt;
+      &lt;td&gt;2.0&lt;/td&gt;
+      &lt;td&gt;0.090&lt;/td&gt;
+      &lt;td&gt;32.0&lt;/td&gt;
+      &lt;td&gt;44.0&lt;/td&gt;
+      &lt;td&gt;0.99490&lt;/td&gt;
+      &lt;td&gt;3.45&lt;/td&gt;
+      &lt;td&gt;0.58&lt;/td&gt;
+      &lt;td&gt;10.5&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1595&lt;/td&gt;
+      &lt;td&gt;5.9&lt;/td&gt;
+      &lt;td&gt;0.550&lt;/td&gt;
+      &lt;td&gt;0.10&lt;/td&gt;
+      &lt;td&gt;2.2&lt;/td&gt;
+      &lt;td&gt;0.062&lt;/td&gt;
+      &lt;td&gt;39.0&lt;/td&gt;
+      &lt;td&gt;51.0&lt;/td&gt;
+      &lt;td&gt;0.99512&lt;/td&gt;
+      &lt;td&gt;3.52&lt;/td&gt;
+      &lt;td&gt;0.76&lt;/td&gt;
+      &lt;td&gt;11.2&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1596&lt;/td&gt;
+      &lt;td&gt;6.3&lt;/td&gt;
+      &lt;td&gt;0.510&lt;/td&gt;
+      &lt;td&gt;0.13&lt;/td&gt;
+      &lt;td&gt;2.3&lt;/td&gt;
+      &lt;td&gt;0.076&lt;/td&gt;
+      &lt;td&gt;29.0&lt;/td&gt;
+      &lt;td&gt;40.0&lt;/td&gt;
+      &lt;td&gt;0.99574&lt;/td&gt;
+      &lt;td&gt;3.42&lt;/td&gt;
+      &lt;td&gt;0.75&lt;/td&gt;
+      &lt;td&gt;11.0&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1597&lt;/td&gt;
+      &lt;td&gt;5.9&lt;/td&gt;
+      &lt;td&gt;0.645&lt;/td&gt;
+      &lt;td&gt;0.12&lt;/td&gt;
+      &lt;td&gt;2.0&lt;/td&gt;
+      &lt;td&gt;0.075&lt;/td&gt;
+      &lt;td&gt;32.0&lt;/td&gt;
+      &lt;td&gt;44.0&lt;/td&gt;
+      &lt;td&gt;0.99547&lt;/td&gt;
+      &lt;td&gt;3.57&lt;/td&gt;
+      &lt;td&gt;0.71&lt;/td&gt;
+      &lt;td&gt;10.2&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1598&lt;/td&gt;
+      &lt;td&gt;6.0&lt;/td&gt;
+      &lt;td&gt;0.310&lt;/td&gt;
+      &lt;td&gt;0.47&lt;/td&gt;
+      &lt;td&gt;3.6&lt;/td&gt;
+      &lt;td&gt;0.067&lt;/td&gt;
+      &lt;td&gt;18.0&lt;/td&gt;
+      &lt;td&gt;42.0&lt;/td&gt;
+      &lt;td&gt;0.99549&lt;/td&gt;
+      &lt;td&gt;3.39&lt;/td&gt;
+      &lt;td&gt;0.66&lt;/td&gt;
+      &lt;td&gt;11.0&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;1599 rows × 12 columns&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The data set consists following Input variables :
+1 - fixed acidity  2 - volatile acidity  3 - citric acid  4 - residual sugar  5 - chlorides  6 - free sulfur dioxide&lt;/p&gt;
+
+&lt;p&gt;7 - total sulfur dioxide  8 - density  9 - pH   10 - sulphates   11 - alcohol&lt;/p&gt;
+
+&lt;p&gt;and the Output variable gives the quality of th wine based on the input variables:&lt;/p&gt;
+
+&lt;p&gt;12 - quality (score between 0 and 10)&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;fixed acidity&lt;/th&gt;
+      &lt;th&gt;volatile acidity&lt;/th&gt;
+      &lt;th&gt;citric acid&lt;/th&gt;
+      &lt;th&gt;residual sugar&lt;/th&gt;
+      &lt;th&gt;chlorides&lt;/th&gt;
+      &lt;th&gt;free sulfur dioxide&lt;/th&gt;
+      &lt;th&gt;total sulfur dioxide&lt;/th&gt;
+      &lt;th&gt;density&lt;/th&gt;
+      &lt;th&gt;pH&lt;/th&gt;
+      &lt;th&gt;sulphates&lt;/th&gt;
+      &lt;th&gt;alcohol&lt;/th&gt;
+      &lt;th&gt;quality&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;count&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+      &lt;td&gt;1599.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;mean&lt;/td&gt;
+      &lt;td&gt;8.319637&lt;/td&gt;
+      &lt;td&gt;0.527821&lt;/td&gt;
+      &lt;td&gt;0.270976&lt;/td&gt;
+      &lt;td&gt;2.538806&lt;/td&gt;
+      &lt;td&gt;0.087467&lt;/td&gt;
+      &lt;td&gt;15.874922&lt;/td&gt;
+      &lt;td&gt;46.467792&lt;/td&gt;
+      &lt;td&gt;0.996747&lt;/td&gt;
+      &lt;td&gt;3.311113&lt;/td&gt;
+      &lt;td&gt;0.658149&lt;/td&gt;
+      &lt;td&gt;10.422983&lt;/td&gt;
+      &lt;td&gt;5.636023&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;std&lt;/td&gt;
+      &lt;td&gt;1.741096&lt;/td&gt;
+      &lt;td&gt;0.179060&lt;/td&gt;
+      &lt;td&gt;0.194801&lt;/td&gt;
+      &lt;td&gt;1.409928&lt;/td&gt;
+      &lt;td&gt;0.047065&lt;/td&gt;
+      &lt;td&gt;10.460157&lt;/td&gt;
+      &lt;td&gt;32.895324&lt;/td&gt;
+      &lt;td&gt;0.001887&lt;/td&gt;
+      &lt;td&gt;0.154386&lt;/td&gt;
+      &lt;td&gt;0.169507&lt;/td&gt;
+      &lt;td&gt;1.065668&lt;/td&gt;
+      &lt;td&gt;0.807569&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;min&lt;/td&gt;
+      &lt;td&gt;4.600000&lt;/td&gt;
+      &lt;td&gt;0.120000&lt;/td&gt;
+      &lt;td&gt;0.000000&lt;/td&gt;
+      &lt;td&gt;0.900000&lt;/td&gt;
+      &lt;td&gt;0.012000&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+      &lt;td&gt;6.000000&lt;/td&gt;
+      &lt;td&gt;0.990070&lt;/td&gt;
+      &lt;td&gt;2.740000&lt;/td&gt;
+      &lt;td&gt;0.330000&lt;/td&gt;
+      &lt;td&gt;8.400000&lt;/td&gt;
+      &lt;td&gt;3.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;25%&lt;/td&gt;
+      &lt;td&gt;7.100000&lt;/td&gt;
+      &lt;td&gt;0.390000&lt;/td&gt;
+      &lt;td&gt;0.090000&lt;/td&gt;
+      &lt;td&gt;1.900000&lt;/td&gt;
+      &lt;td&gt;0.070000&lt;/td&gt;
+      &lt;td&gt;7.000000&lt;/td&gt;
+      &lt;td&gt;22.000000&lt;/td&gt;
+      &lt;td&gt;0.995600&lt;/td&gt;
+      &lt;td&gt;3.210000&lt;/td&gt;
+      &lt;td&gt;0.550000&lt;/td&gt;
+      &lt;td&gt;9.500000&lt;/td&gt;
+      &lt;td&gt;5.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;50%&lt;/td&gt;
+      &lt;td&gt;7.900000&lt;/td&gt;
+      &lt;td&gt;0.520000&lt;/td&gt;
+      &lt;td&gt;0.260000&lt;/td&gt;
+      &lt;td&gt;2.200000&lt;/td&gt;
+      &lt;td&gt;0.079000&lt;/td&gt;
+      &lt;td&gt;14.000000&lt;/td&gt;
+      &lt;td&gt;38.000000&lt;/td&gt;
+      &lt;td&gt;0.996750&lt;/td&gt;
+      &lt;td&gt;3.310000&lt;/td&gt;
+      &lt;td&gt;0.620000&lt;/td&gt;
+      &lt;td&gt;10.200000&lt;/td&gt;
+      &lt;td&gt;6.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;75%&lt;/td&gt;
+      &lt;td&gt;9.200000&lt;/td&gt;
+      &lt;td&gt;0.640000&lt;/td&gt;
+      &lt;td&gt;0.420000&lt;/td&gt;
+      &lt;td&gt;2.600000&lt;/td&gt;
+      &lt;td&gt;0.090000&lt;/td&gt;
+      &lt;td&gt;21.000000&lt;/td&gt;
+      &lt;td&gt;62.000000&lt;/td&gt;
+      &lt;td&gt;0.997835&lt;/td&gt;
+      &lt;td&gt;3.400000&lt;/td&gt;
+      &lt;td&gt;0.730000&lt;/td&gt;
+      &lt;td&gt;11.100000&lt;/td&gt;
+      &lt;td&gt;6.000000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;max&lt;/td&gt;
+      &lt;td&gt;15.900000&lt;/td&gt;
+      &lt;td&gt;1.580000&lt;/td&gt;
+      &lt;td&gt;1.000000&lt;/td&gt;
+      &lt;td&gt;15.500000&lt;/td&gt;
+      &lt;td&gt;0.611000&lt;/td&gt;
+      &lt;td&gt;72.000000&lt;/td&gt;
+      &lt;td&gt;289.000000&lt;/td&gt;
+      &lt;td&gt;1.003690&lt;/td&gt;
+      &lt;td&gt;4.010000&lt;/td&gt;
+      &lt;td&gt;2.000000&lt;/td&gt;
+      &lt;td&gt;14.900000&lt;/td&gt;
+      &lt;td&gt;8.000000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We can see there is no missing data in the columns. Great!!&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'quality'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'quality'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;355&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#let's first visualize the tree on the data without doing any pre processing&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+                       max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort=False,
+                       random_state=None, splitter='best')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;feature_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;class_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;feature_name&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;['fixed acidity',
+ 'volatile acidity',
+ 'citric acid',
+ 'residual sugar',
+ 'chlorides',
+ 'free sulfur dioxide',
+ 'total sulfur dioxide',
+ 'density',
+ 'pH',
+ 'sulphates',
+ 'alcohol']
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# create a dot_file which stores the tree structure&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dot_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;export_graphviz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;feature_names&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;feature_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rounded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Draw graph&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pydotplus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph_from_dot_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write_png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myTree.png&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Show graph&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/output_20_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s understand the above tree:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/tree_explain.PNG&quot; width=&quot;300&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;the first value indicates the column and the condition on which the root node was selected and further will be splitted&lt;/li&gt;
+  &lt;li&gt;the second value gives the gini impurity of the selected node&lt;/li&gt;
+  &lt;li&gt;samples gives the number of observations at that point of time present in the node&lt;/li&gt;
+  &lt;li&gt;value within the square brackets represents number of observations present in each class(output) i.e. in the above given figure, 8 observations are in class 1, 38 in class 2 , 468 in class 3 and so on.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then  the split was made on the basis of given condition.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;py_pred&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# accuracy of our classification tree&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.5791666666666667
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now we haven’t done any prerocessing with our data and neither done any hyper parameter tunings.Let’s do all those and see how our score improves.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-are-hyper-parameters&quot;&gt;What are hyper parameters?&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://devil-cyber.github.io/CodingSpace/assets/images/hypr_params.PNG&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see above the decision tree classifier algorithm takes all those parameters which are also known as hyperparameters.&lt;/p&gt;
+
+&lt;p&gt;Let’s see the most important ones of the parameters(as per sklearn documentation) :&lt;/p&gt;
+&lt;h4 id=&quot;parameters&quot;&gt;Parameters&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;criterion : string, optional (default=”gini”)
+    The function to measure the quality of a split. Supported criteria are
+    “gini” for the Gini impurity and “entropy” for the information gain.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;splitter : string, optional (default=”best”)
+   The strategy used to choose the split at each node. Supported
+   strategies are “best” to choose the best split and “random” to choose
+   the best random split.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;max_depth : int or None, optional (default=None)
+   The maximum depth of the tree. If None, then nodes are expanded until
+   all leaves are pure or until all leaves contain less than
+   min_samples_split samples.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;min_samples_split : int, float, optional (default=2)
+   The minimum number of samples required to split an internal node:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;If int, then consider &lt;code class=&quot;highlighter-rouge&quot;&gt;min_samples_split&lt;/code&gt; as the minimum number.&lt;/li&gt;
+      &lt;li&gt;If float, then &lt;code class=&quot;highlighter-rouge&quot;&gt;min_samples_split&lt;/code&gt; is a fraction and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ceil(min_samples_split * n_samples)&lt;/code&gt; are the minimum
+number of samples for each split.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;.. versionchanged:: 0.18
+      Added float values for fractions.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;min_samples_leaf : int, float, optional (default=1)
+   The minimum number of samples required to be at a leaf node.
+   A split point at any depth will only be considered if it leaves at
+   least &lt;code class=&quot;highlighter-rouge&quot;&gt;min_samples_leaf&lt;/code&gt; training samples in each of the left and
+   right branches.  This may have the effect of smoothing the model,
+   especially in regression.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;If int, then consider &lt;code class=&quot;highlighter-rouge&quot;&gt;min_samples_leaf&lt;/code&gt; as the minimum number.&lt;/li&gt;
+      &lt;li&gt;If float, then &lt;code class=&quot;highlighter-rouge&quot;&gt;min_samples_leaf&lt;/code&gt; is a fraction and
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ceil(min_samples_leaf * n_samples)&lt;/code&gt; are the minimum
+number of samples for each node.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;max_features : int, float, string or None, optional (default=None)
+   The number of features to consider when looking for the best split:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;   - If int, then consider `max_features` features at each split.
+   - If float, then `max_features` is a fraction and
+     `int(max_features * n_features)` features are considered at each
+     split.
+   - If &quot;auto&quot;, then `max_features=sqrt(n_features)`.
+   - If &quot;sqrt&quot;, then `max_features=sqrt(n_features)`.
+   - If &quot;log2&quot;, then `max_features=log2(n_features)`.
+   - If None, then `max_features=n_features`.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Note: the search for a split does not stop until at least one
+   valid partition of the node samples is found, even if it requires to
+   effectively inspect more than &lt;code class=&quot;highlighter-rouge&quot;&gt;max_features&lt;/code&gt; features.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;random_state : int, RandomState instance or None, optional (default=None)
+   If int, random_state is the seed used by the random number generator;
+   If RandomState instance, random_state is the random number generator;
+   If None, the random number generator is the RandomState instance used
+   by &lt;code class=&quot;highlighter-rouge&quot;&gt;np.random&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;max_leaf_nodes : int or None, optional (default=None)
+   Grow a tree with &lt;code class=&quot;highlighter-rouge&quot;&gt;max_leaf_nodes&lt;/code&gt; in best-first fashion.
+   Best nodes are defined as relative reduction in impurity.
+   If None then unlimited number of leaf nodes.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;min_impurity_decrease : float, optional (default=0.)
+   A node will be split if this split induces a decrease of the impurity
+   greater than or equal to this value.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;min_impurity_split : float, (default=1e-7)
+   Threshold for early stopping in tree growth. A node will split
+   if its impurity is above the threshold, otherwise it is a leaf.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;class_weight : dict, list of dicts, “balanced” or None, default=None
+   Weights associated with classes in the form &lt;code class=&quot;highlighter-rouge&quot;&gt;{class_label: weight}&lt;/code&gt;.
+   If not given, all classes are supposed to have weight one. For
+   multi-output problems, a list of dicts can be provided in the same
+   order as the columns of y.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;presort : bool, optional (default=False)
+    Whether to presort the data to speed up the finding of best splits in
+    fitting. For the default settings of a decision tree on large
+    datasets, setting this to true may slow down the training process.
+    When using either a smaller dataset or a restricted depth, this may
+    speed up the training.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When we do hyperparameter tuning, we basically try to find those sets and values of hyperparameters which will give us a model with maximum accuracy.
+Let’s go ahead and try to improve our model.&lt;/p&gt;
+
+&lt;p&gt;We will start with scaling our data.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;scalar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;StandardScaler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;x_transform&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scalar&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;355&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Although our dataset is realtively small, let’s use PCA for feature selection and see if it improves our accuracy.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sklearn.decomposition&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PCA&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PCA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;principalComponents&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cumsum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;explained_variance_ratio_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Number of Components'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Variance (&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;)'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#for each component&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Explained Variance'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;output_30_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can see that around 95% of the variance is being explained by 8 components.
+So instead of giving all 11 columns as input in our algorithm let’s use these 8 principal components instead.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PCA&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_components&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;new_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;principal_x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-3'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-4'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-5'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-6'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-7'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'PC-8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;principal_x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div&gt;
+&lt;style scoped=&quot;&quot;&gt;
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+&lt;/style&gt;
+&lt;table border=&quot;1&quot; class=&quot;dataframe&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr style=&quot;text-align: right;&quot;&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;PC-1&lt;/th&gt;
+      &lt;th&gt;PC-2&lt;/th&gt;
+      &lt;th&gt;PC-3&lt;/th&gt;
+      &lt;th&gt;PC-4&lt;/th&gt;
+      &lt;th&gt;PC-5&lt;/th&gt;
+      &lt;th&gt;PC-6&lt;/th&gt;
+      &lt;th&gt;PC-7&lt;/th&gt;
+      &lt;th&gt;PC-8&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;-1.619530&lt;/td&gt;
+      &lt;td&gt;0.450950&lt;/td&gt;
+      &lt;td&gt;-1.774454&lt;/td&gt;
+      &lt;td&gt;0.043740&lt;/td&gt;
+      &lt;td&gt;0.067014&lt;/td&gt;
+      &lt;td&gt;-0.913921&lt;/td&gt;
+      &lt;td&gt;-0.161043&lt;/td&gt;
+      &lt;td&gt;-0.282258&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;-0.799170&lt;/td&gt;
+      &lt;td&gt;1.856553&lt;/td&gt;
+      &lt;td&gt;-0.911690&lt;/td&gt;
+      &lt;td&gt;0.548066&lt;/td&gt;
+      &lt;td&gt;-0.018392&lt;/td&gt;
+      &lt;td&gt;0.929714&lt;/td&gt;
+      &lt;td&gt;-1.009829&lt;/td&gt;
+      &lt;td&gt;0.762587&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;-0.748479&lt;/td&gt;
+      &lt;td&gt;0.882039&lt;/td&gt;
+      &lt;td&gt;-1.171394&lt;/td&gt;
+      &lt;td&gt;0.411021&lt;/td&gt;
+      &lt;td&gt;-0.043531&lt;/td&gt;
+      &lt;td&gt;0.401473&lt;/td&gt;
+      &lt;td&gt;-0.539553&lt;/td&gt;
+      &lt;td&gt;0.597946&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;2.357673&lt;/td&gt;
+      &lt;td&gt;-0.269976&lt;/td&gt;
+      &lt;td&gt;0.243489&lt;/td&gt;
+      &lt;td&gt;-0.928450&lt;/td&gt;
+      &lt;td&gt;-1.499149&lt;/td&gt;
+      &lt;td&gt;-0.131017&lt;/td&gt;
+      &lt;td&gt;0.344290&lt;/td&gt;
+      &lt;td&gt;-0.455375&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;-1.619530&lt;/td&gt;
+      &lt;td&gt;0.450950&lt;/td&gt;
+      &lt;td&gt;-1.774454&lt;/td&gt;
+      &lt;td&gt;0.043740&lt;/td&gt;
+      &lt;td&gt;0.067014&lt;/td&gt;
+      &lt;td&gt;-0.913921&lt;/td&gt;
+      &lt;td&gt;-0.161043&lt;/td&gt;
+      &lt;td&gt;-0.282258&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1594&lt;/td&gt;
+      &lt;td&gt;-2.150500&lt;/td&gt;
+      &lt;td&gt;0.814286&lt;/td&gt;
+      &lt;td&gt;0.617063&lt;/td&gt;
+      &lt;td&gt;0.407687&lt;/td&gt;
+      &lt;td&gt;-0.240936&lt;/td&gt;
+      &lt;td&gt;0.054835&lt;/td&gt;
+      &lt;td&gt;0.170812&lt;/td&gt;
+      &lt;td&gt;-0.355866&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1595&lt;/td&gt;
+      &lt;td&gt;-2.214496&lt;/td&gt;
+      &lt;td&gt;0.893101&lt;/td&gt;
+      &lt;td&gt;1.807402&lt;/td&gt;
+      &lt;td&gt;0.414003&lt;/td&gt;
+      &lt;td&gt;0.119592&lt;/td&gt;
+      &lt;td&gt;-0.674711&lt;/td&gt;
+      &lt;td&gt;-0.607970&lt;/td&gt;
+      &lt;td&gt;-0.247640&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1596&lt;/td&gt;
+      &lt;td&gt;-1.456129&lt;/td&gt;
+      &lt;td&gt;0.311746&lt;/td&gt;
+      &lt;td&gt;1.124239&lt;/td&gt;
+      &lt;td&gt;0.491877&lt;/td&gt;
+      &lt;td&gt;0.193716&lt;/td&gt;
+      &lt;td&gt;-0.506410&lt;/td&gt;
+      &lt;td&gt;-0.231082&lt;/td&gt;
+      &lt;td&gt;0.079382&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1597&lt;/td&gt;
+      &lt;td&gt;-2.270518&lt;/td&gt;
+      &lt;td&gt;0.979791&lt;/td&gt;
+      &lt;td&gt;0.627965&lt;/td&gt;
+      &lt;td&gt;0.639770&lt;/td&gt;
+      &lt;td&gt;0.067735&lt;/td&gt;
+      &lt;td&gt;-0.860408&lt;/td&gt;
+      &lt;td&gt;-0.321487&lt;/td&gt;
+      &lt;td&gt;-0.468876&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1598&lt;/td&gt;
+      &lt;td&gt;-0.426975&lt;/td&gt;
+      &lt;td&gt;-0.536690&lt;/td&gt;
+      &lt;td&gt;1.628955&lt;/td&gt;
+      &lt;td&gt;-0.391716&lt;/td&gt;
+      &lt;td&gt;0.450482&lt;/td&gt;
+      &lt;td&gt;-0.496154&lt;/td&gt;
+      &lt;td&gt;1.189132&lt;/td&gt;
+      &lt;td&gt;0.042176&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;1599 rows × 8 columns&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# let's see how well our model perform on this new data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;train_test_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;principal_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;test_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;355&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;#let's first visualize the tree on the data without doing any pre processing&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.58125
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;There is a little increase in our test accuracy. Great!!&lt;/p&gt;
+
+&lt;p&gt;Let’s now try to tune some hyperparameters using the GridSearchCV algorithm.
+We have studied about CrossValidation in upcoming lecture.&lt;/p&gt;
+
+&lt;p&gt;GridSearchCV is a method used to tune our hyperparameters. We can pass different values of hyperparameters as parameters for grid search.
+It does a exhaustive generation of combination of different parameters passed.
+Using cross validation score, Grid Search returns the combination of hyperparameters for which the model is performing the best.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# we are tuning three hyperparameters right now, we are passing the different values for both parameters&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;grid_param&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'criterion'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'gini'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'entropy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'max_depth'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'min_samples_leaf'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'min_samples_split'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'splitter'&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'best'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'random'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grid_search&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GridSearchCV&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;estimator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                     &lt;span class=&quot;n&quot;&gt;param_grid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grid_param&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                     &lt;span class=&quot;n&quot;&gt;cv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;n_jobs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grid_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;C:\Users\user\Anaconda3\lib\site-packages\sklearn\model_selection\_search.py:814: DeprecationWarning: The default of the `iid` parameter will change from True to False in version 0.22 and will be removed in 0.24. This will change numeric results when test-set sizes are unequal.
+  DeprecationWarning)
+
+
+
+
+
+GridSearchCV(cv=5, error_score='raise-deprecating',
+             estimator=DecisionTreeClassifier(class_weight=None,
+                                              criterion='entropy', max_depth=16,
+                                              max_features=None,
+                                              max_leaf_nodes=None,
+                                              min_impurity_decrease=0.0,
+                                              min_impurity_split=None,
+                                              min_samples_leaf=1,
+                                              min_samples_split=2,
+                                              min_weight_fraction_leaf=0.0,
+                                              presort=False, random_state=None,
+                                              splitter='best'),
+             iid='warn', n_jobs=-1,
+             param_grid={'criterion': ['gini', 'entropy'],
+                         'max_depth': range(2, 32),
+                         'min_samples_leaf': range(1, 10),
+                         'min_samples_split': range(2, 10),
+                         'splitter': ['best', 'random']},
+             pre_dispatch='2*n_jobs', refit=True, return_train_score=False,
+             scoring=None, verbose=0)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;best_parameters&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_params_&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{'criterion': 'entropy', 'max_depth': 24, 'min_samples_leaf': 1, 'min_samples_split': 2, 'splitter': 'random'}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grid_search&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;best_score_&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.5933869526362824
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DecisionTreeClassifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;criterion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'entropy'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_depth&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_samples_leaf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;min_samples_split&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;splitter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'random'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;DecisionTreeClassifier(class_weight=None, criterion='entropy', max_depth=24,
+                       max_features=None, max_leaf_nodes=None,
+                       min_impurity_decrease=0.0, min_impurity_split=None,
+                       min_samples_leaf=1, min_samples_split=2,
+                       min_weight_fraction_leaf=0.0, presort=False,
+                       random_state=None, splitter='random')
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;0.6041666666666666
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Great!! Our test score has improved after using Gridsearch.&lt;/p&gt;
+
+&lt;p&gt;Note : we must understand that giving all the hyperparameters in the gridSearch doesn’t gurantee the best result. We have to do hit and trial with parameters to get the perfect score.&lt;/p&gt;
+
+&lt;p&gt;You are welcome to try tweaking the parameters more and try an improve the accuracy more.&lt;/p&gt;
+
+&lt;p&gt;Let’s visualize the tree:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;feature_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;class_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y_train&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;unique&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# create a dot_file which stores the tree structure&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dot_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;export_graphviz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rounded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filled&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Draw graph&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pydotplus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph_from_dot_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;span class=&quot;c&quot;&gt;#graph.write_png(&quot;tree.png&quot;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Show graph&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;graph&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create_png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;output_46_0.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# let's save the model&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pickle&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'C://Users//user/devil/Decision tree'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/modelForPrediction.sav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pickle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'C://Users//user/devil/Decision tree'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/standardScalar.sav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pickle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scalar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'C://Users//user/Devil/Decision tree'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'/pca_model.sav'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'wb'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pickle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pca&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Machine Learning</summary></entry><entry><title type="html">Basic Mathematical Algorithm Used in Programming</title><link href="http://localhost:4000/CodingSpace/programming/" rel="alternate" type="text/html" title="Basic Mathematical Algorithm Used in Programming " /><published>2020-01-12T00:00:00+05:30</published><updated>2020-01-12T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/mathematics_algorithm</id><content type="html" xml:base="http://localhost:4000/CodingSpace/programming/">&lt;h3 id=&quot;hey-folks-this-is-a-approach-to-get-started-with-the-simple-mathematical-algorithm-using-python-starting-with-the-basic-one&quot;&gt;Hey! folks this is a approach to get started with the simple &lt;code class=&quot;highlighter-rouge&quot;&gt;mathematical algorithm&lt;/code&gt; using python starting with the basic one.&lt;/h3&gt;
 
 &lt;h4 style=&quot;color:orange;&quot;&gt;Check if number is palindrome&lt;/h4&gt;
 

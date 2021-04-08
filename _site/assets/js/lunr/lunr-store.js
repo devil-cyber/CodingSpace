@@ -4,6 +4,11 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/CodingSpace/programming/",
         "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/img.jpg"},{
+        "title": "Decision Tree",
+        "excerpt":"Decision TreeDecision tree algorithm is one of the most versatile algorithms in machine learning which can perform both classification and regression analysis. It is very powerful and works great with complex datasets. Apart from that, it is very easy to understand and read. That makes it more popular to use....","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/CodingSpace/decision-tree/",
+        "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/cnn.jpeg"},{
         "title": "Deep Dive To Convolution Neural Network",
         "excerpt":"LeNet is a convolutional neural network structure proposed by Yann Lecun in 1998. It was the first big breakthrough in the world of deep learning and computer vision. In general, LeNet refers to LeNet-5.This architecture was the first time applied over the MNIST dataset to recognize the handwritten character.ArchitectureInput Layer...","categories": [],
         "tags": [],
@@ -39,8 +44,8 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/CodingSpace/pagerank/",
         "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/page.jpg"},{
-        "title": "Get Started Tensorflow",
+        "title": "Get Started With Tensorflow",
         "excerpt":"What is TensorFlow? Open-source library for graph-based numerical computation Developed by the Google Brain Team Low and high level APIs Addition, multiplication, differentiation Machine learning &amp; deep learning modelsWhat is a tensor? Generalization of vectors and matrices Collection of numbers Specific shapeOverview of ConceptsTensorFlow gets its name from tensors, which...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/CodingSpace/TensorFlow/",
-        "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/tf.png"}]
+        "teaser":"https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/tf.png"}]

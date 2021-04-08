@@ -5,6 +5,10 @@
 <lastmod>2020-01-12T00:00:00+05:30</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/CodingSpace/decision-tree/</loc>
+<lastmod>2020-01-22T00:00:00+05:30</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/CodingSpace/cnn/</loc>
 <lastmod>2020-11-22T00:00:00+05:30</lastmod>
 </url>
@@ -53,6 +57,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/CodingSpace/mnist/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/CodingSpace/decision-tree/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/CodingSpace/programming/</loc>

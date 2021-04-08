@@ -2,7 +2,7 @@
 layout: single
 header:
   overlay_color: "#333"
-  teaser: /assets/images/algorithm/tf.png
+  teaser: https://devil-cyber.github.io/CodingSpace/assets/images/algorithm/tf.png
 title:  "Get Started Tensorflow"
 excerpt: "Deep Learning & Machine Learning"
 breadcrumbs: true

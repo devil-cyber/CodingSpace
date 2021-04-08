@@ -1,29 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/CodingSpace/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/CodingSpace/" rel="alternate" type="text/html" /><updated>2021-04-04T10:45:14+05:30</updated><id>http://localhost:4000/CodingSpace/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Get Started With Basic Of Tensorflow</title><link href="http://localhost:4000/CodingSpace/tensorflow_part_1/" rel="alternate" type="text/html" title="Get Started With Basic Of Tensorflow" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/tensorflow_part_1</id><content type="html" xml:base="http://localhost:4000/CodingSpace/tensorflow_part_1/">&lt;h1 id=&quot;what-is-tensorflow&quot;&gt;What is TensorFlow?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/CodingSpace/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/CodingSpace/" rel="alternate" type="text/html" /><updated>2021-04-08T09:58:49+05:30</updated><id>http://localhost:4000/CodingSpace/</id><title type="html">Blog</title><subtitle>Blog about Deep Learning</subtitle><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><entry><title type="html">Get Started Tensorflow</title><link href="http://localhost:4000/CodingSpace/TensorFlow/" rel="alternate" type="text/html" title="Get Started Tensorflow" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/tensorflow_part_1</id><content type="html" xml:base="http://localhost:4000/CodingSpace/TensorFlow/">&lt;h1 id=&quot;what-is-tensorflow&quot;&gt;What is TensorFlow?&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;Open-source library for graph-based numerical computation
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;h2 id=&quot;developed-by-the-google-brain-team&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Developed by the Google Brain Team&lt;/code&gt;&lt;/h2&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Low and high level APIs
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;h2 id=&quot;addition-multiplication-differentiation&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Addition, multiplication, differentiation&lt;/code&gt;&lt;/h2&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;h2 id=&quot;machine-learning--deep-learning-models&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Machine learning &amp;amp; deep learning models&lt;/code&gt;&lt;/h2&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Open-source library for graph-based numerical computation&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Developed by the Google Brain Team&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Low and high level APIs&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Addition, multiplication, differentiation&lt;/li&gt;
+  &lt;li&gt;Machine learning &amp;amp; deep learning models&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;what-is-a-tensor&quot;&gt;What is a tensor?&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Generalization of vectors and matrices&lt;/li&gt;
   &lt;li&gt;Collection of numbers&lt;/li&gt;
-  &lt;li&gt;Specfic shape&lt;/li&gt;
+  &lt;li&gt;Specific shape&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;overview-of-concepts&quot;&gt;Overview of Concepts&lt;/h2&gt;
@@ -36,14 +24,12 @@
   &lt;li&gt;A &lt;strong&gt;matrix&lt;/strong&gt; is a 2-d array (a 2nd-order tensor).  For example, &lt;code class=&quot;highlighter-rouge&quot;&gt;[[3.1, 8.2, 5.9][4.3, -2.7, 6.5]]&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/scalar.png&quot; alt=&quot;&quot; /&gt;
-&lt;strong&gt;Scaler with dim 0&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/vector.png&quot; alt=&quot;&quot; /&gt;
-&lt;strong&gt;vector with dim 1&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/matrix.png&quot; alt=&quot;&quot; /&gt;
-&lt;strong&gt;Matrix with dim 2&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scaler with dim 0&lt;/strong&gt;
+&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/scalar.png&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;vector with dim 1&lt;/strong&gt;
+&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/vector.png&quot; alt=&quot;&quot; /&gt;
+&lt;strong&gt;Matrix with dim 2&lt;/strong&gt;
+&lt;img src=&quot;https://www.tensorflow.org/guide/images/tensor/matrix.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;defining-tensors-in-tensorflow&quot;&gt;Defining tensors in TensorFlow&lt;/h1&gt;
 
@@ -121,6 +107,176 @@
 &lt;span class=&quot;c&quot;&gt;# What types of operations are valid?&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# multiply(A0, A0) , multiply(A31, A31) , and multiply(A34, A34)&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# matmul(A43, A34 ), but not matmul(A43, A43)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h1 id=&quot;overview-of-advanced-operations&quot;&gt;Overview of advanced operations&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Operations&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Use&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gradient()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Computes the slope of a function at a point&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;reshape()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Reshapes a tensor (e.g. 10x10 to100x1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;random()&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Populates tensor with entries drawn from a probability distribution&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;finding-the-optimum&quot;&gt;Finding the optimum&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;In many problems, we will want to find the optimum of a function.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;minimum-lowest-value-of-a-loss-function&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Minimum: Lowest value of a loss function.&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;maximum-highest-value-of-objective-function&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Maximum: Highest value of objective function.&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;We can do this using the gradient() operation.
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;optimum-find-a-point-where-gradient--0&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Optimum: Find a point where gradient = 0.&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;minimum-change-in-gradient--0&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Minimum: Change in gradient &amp;gt; 0&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;maximum-change-in-gradient--0&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Maximum: Change in gradient &amp;lt; 0&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Import tensorflow under the alias tf&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Define x&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Variable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Define y within instance of GradientTape&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GradientTape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;tape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;multiply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Evaluate the gradient of y at x = -1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tape&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;numpy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-2.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;how-to-reshape-a-grayscale-image&quot;&gt;How to reshape a grayscale image&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Import tensorflow as alias tf&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Generate grayscale image&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxval&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'int32'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Reshape grayscale image&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gray&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;how-to-reshape-a-color-image&quot;&gt;How to reshape a color image&lt;/h1&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Import tensorflow as alias tf&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Generate color image&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uniform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;maxval&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dtype&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'int32'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Reshape color image&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reshape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;introduction-to-loss-functions&quot;&gt;Introduction to loss functions&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Fundamental tensorflow operation
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;used-to-train-a-model&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Used to train a model&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;measure-of-model-fit&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Measure of model fit&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Higher value -&amp;gt; worse fit
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;minimize-the-loss-function&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Minimize the loss function&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;common-loss-functions-in-tensorflow&quot;&gt;Common loss functions in TensorFlow&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;TensorFlow has operations for common loss functions
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;mean-squared-error-mse&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Mean squared error (MSE)&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;mean-absolute-error-mae&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Mean absolute error (MAE)&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;huber-error&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Huber error&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Loss functions are accessible from tf.keras.losses()
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;tfkeraslossesmse&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tf.keras.losses.mse()&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;tfkeraslossesmae&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tf.keras.losses.mae()&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h2 id=&quot;tfkeraslosseshuber&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tf.keras.losses.Huber()&lt;/code&gt;&lt;/h2&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;why-do-we-care-about-loss-functions&quot;&gt;Why do we care about loss functions?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;MSE
+    &lt;ul&gt;
+      &lt;li&gt;Strongly penalizes outliers&lt;/li&gt;
+      &lt;li&gt;High (gradient) sensitivity near minimum&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MAE
+    &lt;ul&gt;
+      &lt;li&gt;Scales linearly with size of error&lt;/li&gt;
+      &lt;li&gt;Low sensitivity near minimum&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Huber
+    &lt;ul&gt;
+      &lt;li&gt;Similar to MSE near minimum&lt;/li&gt;
+      &lt;li&gt;Similar to MAE away from minimum&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Import TensorFlow under standard alias&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Compute the MSE loss&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;loss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;keras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;losses&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;targets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predictions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Manikant Kumar</name><email>mani2474695@gmail.com</email></author><summary type="html">Deep Learning &amp; Machine Learning</summary></entry><entry><title type="html">Understanding PageRank</title><link href="http://localhost:4000/CodingSpace/pagerank/" rel="alternate" type="text/html" title="Understanding PageRank" /><published>2021-04-03T00:00:00+05:30</published><updated>2021-04-03T00:00:00+05:30</updated><id>http://localhost:4000/CodingSpace/pagerank</id><content type="html" xml:base="http://localhost:4000/CodingSpace/pagerank/">&lt;p&gt;In simple terms, PageRank is an intuitive way of ranking web pages, which formed the basis for Google’s web indexing algorithm during its early phase. In this article, you’ll learn about the intuition behind page rank and implementing page rank in python. The article is divided into the following sections:&lt;/p&gt;
 
 &lt;ul&gt;

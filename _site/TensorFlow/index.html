@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Get Started With Basic Of Tensorflow - Blog</title>
+<!-- begin _includes/seo.html --><title>Get Started Tensorflow - Blog</title>
 <meta name="description" content="Deep Learning &amp; Machine Learning">
 
 
@@ -17,8 +17,8 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Blog">
-<meta property="og:title" content="Get Started With Basic Of Tensorflow">
-<meta property="og:url" content="http://localhost:4000/CodingSpace/tensorflow_part_1/">
+<meta property="og:title" content="Get Started Tensorflow">
+<meta property="og:url" content="http://localhost:4000/CodingSpace/TensorFlow/">
 
 
   <meta property="og:description" content="Deep Learning &amp; Machine Learning">
@@ -30,9 +30,9 @@
 
 
   <meta name="twitter:site" content="@Manikan09676833">
-  <meta name="twitter:title" content="Get Started With Basic Of Tensorflow">
+  <meta name="twitter:title" content="Get Started Tensorflow">
   <meta name="twitter:description" content="Deep Learning &amp; Machine Learning">
-  <meta name="twitter:url" content="http://localhost:4000/CodingSpace/tensorflow_part_1/">
+  <meta name="twitter:url" content="http://localhost:4000/CodingSpace/TensorFlow/">
 
   
     <meta name="twitter:card" content="summary">
@@ -56,7 +56,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/CodingSpace/tensorflow_part_1/">
+<link rel="canonical" href="http://localhost:4000/CodingSpace/TensorFlow/">
 
 
 
@@ -177,7 +177,7 @@
     <div class="wrapper">
       <h1 class="page__title" itemprop="headline">
         
-          Get Started With Basic Of Tensorflow
+          Get Started Tensorflow
 
         
       </h1>
@@ -213,7 +213,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Get Started With Basic Of Tensorflow</li>
+        <li class="current">Get Started Tensorflow</li>
       
     
   </ol>
@@ -226,7 +226,7 @@
   
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Get Started With Basic Of Tensorflow">
+    <meta itemprop="headline" content="Get Started Tensorflow">
     <meta itemprop="description" content="Deep Learning &amp; Machine Learning">
     <meta itemprop="datePublished" content="April 04, 2021">
     
@@ -238,30 +238,18 @@
         
         <h1 id="what-is-tensorflow">What is TensorFlow?</h1>
 <ul>
-  <li>Open-source library for graph-based numerical computation
-    <ul>
-      <li>
-        <h2 id="developed-by-the-google-brain-team"><code class="highlighter-rouge">Developed by the Google Brain Team</code></h2>
-      </li>
-    </ul>
-  </li>
-  <li>Low and high level APIs
-    <ul>
-      <li>
-        <h2 id="addition-multiplication-differentiation"><code class="highlighter-rouge">Addition, multiplication, differentiation</code></h2>
-      </li>
-      <li>
-        <h2 id="machine-learning--deep-learning-models"><code class="highlighter-rouge">Machine learning &amp; deep learning models</code></h2>
-      </li>
-    </ul>
-  </li>
+  <li><strong>Open-source library for graph-based numerical computation</strong></li>
+  <li><strong>Developed by the Google Brain Team</strong></li>
+  <li><strong>Low and high level APIs</strong></li>
+  <li>Addition, multiplication, differentiation</li>
+  <li>Machine learning &amp; deep learning models</li>
 </ul>
 
 <h1 id="what-is-a-tensor">What is a tensor?</h1>
 <ul>
   <li>Generalization of vectors and matrices</li>
   <li>Collection of numbers</li>
-  <li>Specfic shape</li>
+  <li>Specific shape</li>
 </ul>
 
 <h2 id="overview-of-concepts">Overview of Concepts</h2>
@@ -274,14 +262,12 @@
   <li>A <strong>matrix</strong> is a 2-d array (a 2nd-order tensor).  For example, <code class="highlighter-rouge">[[3.1, 8.2, 5.9][4.3, -2.7, 6.5]]</code></li>
 </ul>
 
-<p><img src="https://www.tensorflow.org/guide/images/tensor/scalar.png" alt="" />
-<strong>Scaler with dim 0</strong></p>
-
-<p><img src="https://www.tensorflow.org/guide/images/tensor/vector.png" alt="" />
-<strong>vector with dim 1</strong></p>
-
-<p><img src="https://www.tensorflow.org/guide/images/tensor/matrix.png" alt="" />
-<strong>Matrix with dim 2</strong></p>
+<p><strong>Scaler with dim 0</strong>
+<img src="https://www.tensorflow.org/guide/images/tensor/scalar.png" alt="" />
+<strong>vector with dim 1</strong>
+<img src="https://www.tensorflow.org/guide/images/tensor/vector.png" alt="" />
+<strong>Matrix with dim 2</strong>
+<img src="https://www.tensorflow.org/guide/images/tensor/matrix.png" alt="" /></p>
 
 <h1 id="defining-tensors-in-tensorflow">Defining tensors in TensorFlow</h1>
 
@@ -360,6 +346,176 @@
 <span class="c"># multiply(A0, A0) , multiply(A31, A31) , and multiply(A34, A34)</span>
 <span class="c"># matmul(A43, A34 ), but not matmul(A43, A43)</span>
 </code></pre></div></div>
+<h1 id="overview-of-advanced-operations">Overview of advanced operations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operations</th>
+      <th style="text-align: left">Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gradient()</td>
+      <td style="text-align: left">Computes the slope of a function at a point</td>
+    </tr>
+    <tr>
+      <td>reshape()</td>
+      <td style="text-align: left">Reshapes a tensor (e.g. 10x10 to100x1)</td>
+    </tr>
+    <tr>
+      <td>random()</td>
+      <td style="text-align: left">Populates tensor with entries drawn from a probability distribution</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="finding-the-optimum">Finding the optimum</h1>
+<ul>
+  <li>In many problems, we will want to find the optimum of a function.
+    <ul>
+      <li>
+        <h2 id="minimum-lowest-value-of-a-loss-function"><code class="highlighter-rouge">Minimum: Lowest value of a loss function.</code></h2>
+      </li>
+      <li>
+        <h2 id="maximum-highest-value-of-objective-function"><code class="highlighter-rouge">Maximum: Highest value of objective function.</code></h2>
+      </li>
+    </ul>
+  </li>
+  <li>We can do this using the gradient() operation.
+    <ul>
+      <li>
+        <h2 id="optimum-find-a-point-where-gradient--0"><code class="highlighter-rouge">Optimum: Find a point where gradient = 0.</code></h2>
+      </li>
+      <li>
+        <h2 id="minimum-change-in-gradient--0"><code class="highlighter-rouge">Minimum: Change in gradient &gt; 0</code></h2>
+      </li>
+      <li>
+        <h2 id="maximum-change-in-gradient--0"><code class="highlighter-rouge">Maximum: Change in gradient &lt; 0</code></h2>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Import tensorflow under the alias tf</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="c"># Define x</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="o">-</span><span class="mf">1.0</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Define y within instance of GradientTape</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
+  <span class="n">tape</span><span class="o">.</span><span class="n">watch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="n">y</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Evaluate the gradient of y at x = -1</span>
+<span class="n">g</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">numpy</span><span class="p">())</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-2.0
+</code></pre></div></div>
+
+<h1 id="how-to-reshape-a-grayscale-image">How to reshape a grayscale image</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Import tensorflow as alias tf</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="c"># Generate grayscale image</span>
+<span class="n">gray</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">maxval</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">'int32'</span><span class="p">)</span>
+<span class="c"># Reshape grayscale image</span>
+<span class="n">gray</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">gray</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="how-to-reshape-a-color-image">How to reshape a color image</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Import tensorflow as alias tf</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="c"># Generate color image</span>
+<span class="n">color</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">maxval</span><span class="o">=</span><span class="mi">255</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s">'int32'</span><span class="p">)</span>
+<span class="c"># Reshape color image</span>
+<span class="n">color</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h1 id="introduction-to-loss-functions">Introduction to loss functions</h1>
+<ul>
+  <li>Fundamental tensorflow operation
+    <ul>
+      <li>
+        <h2 id="used-to-train-a-model"><code class="highlighter-rouge">Used to train a model</code></h2>
+      </li>
+      <li>
+        <h2 id="measure-of-model-fit"><code class="highlighter-rouge">Measure of model fit</code></h2>
+      </li>
+    </ul>
+  </li>
+  <li>Higher value -&gt; worse fit
+    <ul>
+      <li>
+        <h2 id="minimize-the-loss-function"><code class="highlighter-rouge">Minimize the loss function</code></h2>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="common-loss-functions-in-tensorflow">Common loss functions in TensorFlow</h1>
+<ul>
+  <li>TensorFlow has operations for common loss functions
+    <ul>
+      <li>
+        <h2 id="mean-squared-error-mse"><code class="highlighter-rouge">Mean squared error (MSE)</code></h2>
+      </li>
+      <li>
+        <h2 id="mean-absolute-error-mae"><code class="highlighter-rouge">Mean absolute error (MAE)</code></h2>
+      </li>
+      <li>
+        <h2 id="huber-error"><code class="highlighter-rouge">Huber error</code></h2>
+      </li>
+    </ul>
+  </li>
+  <li>Loss functions are accessible from tf.keras.losses()
+    <ul>
+      <li>
+        <h2 id="tfkeraslossesmse"><code class="highlighter-rouge">tf.keras.losses.mse()</code></h2>
+      </li>
+      <li>
+        <h2 id="tfkeraslossesmae"><code class="highlighter-rouge">tf.keras.losses.mae()</code></h2>
+      </li>
+      <li>
+        <h2 id="tfkeraslosseshuber"><code class="highlighter-rouge">tf.keras.losses.Huber()</code></h2>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="why-do-we-care-about-loss-functions">Why do we care about loss functions?</h1>
+<ul>
+  <li>MSE
+    <ul>
+      <li>Strongly penalizes outliers</li>
+      <li>High (gradient) sensitivity near minimum</li>
+    </ul>
+  </li>
+  <li>MAE
+    <ul>
+      <li>Scales linearly with size of error</li>
+      <li>Low sensitivity near minimum</li>
+    </ul>
+  </li>
+  <li>Huber
+    <ul>
+      <li>Similar to MSE near minimum</li>
+      <li>Similar to MAE away from minimum</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Import TensorFlow under standard alias</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="c"># Compute the MSE loss</span>
+<span class="n">loss</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">mse</span><span class="p">(</span><span class="n">targets</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
+</code></pre></div></div>
 
 
         
@@ -380,9 +536,9 @@
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=Manikan09676833&text=Get+Started+With+Basic+Of+Tensorflow%20http%3A%2F%2Flocalhost%3A4000%2FCodingSpace%2Ftensorflow_part_1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=Manikan09676833&text=Get+Started+Tensorflow%20http%3A%2F%2Flocalhost%3A4000%2FCodingSpace%2FTensorFlow%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FCodingSpace%2Ftensorflow_part_1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2FCodingSpace%2FTensorFlow%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
   
 </section>
@@ -614,7 +770,7 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/CodingSpace/tensorflow_part_1/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/CodingSpace/TensorFlow/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/tensorflow_part_1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE

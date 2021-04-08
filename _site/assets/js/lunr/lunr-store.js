@@ -39,8 +39,8 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/CodingSpace/pagerank/",
         "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/page.jpg"},{
-        "title": "Get Started With Basic Of Tensorflow",
-        "excerpt":"What is TensorFlow? Open-source library for graph-based numerical computation Developed by the Google Brain Team Low and high level APIs Addition, multiplication, differentiation Machine learning &amp; deep learning models What is a tensor? Generalization of vectors and matrices Collection of numbers Specfic shapeOverview of ConceptsTensorFlow gets its name from tensors,...","categories": [],
+        "title": "Get Started Tensorflow",
+        "excerpt":"What is TensorFlow? Open-source library for graph-based numerical computation Developed by the Google Brain Team Low and high level APIs Addition, multiplication, differentiation Machine learning &amp; deep learning modelsWhat is a tensor? Generalization of vectors and matrices Collection of numbers Specific shapeOverview of ConceptsTensorFlow gets its name from tensors, which...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/CodingSpace/tensorflow_part_1/",
+        "url": "http://localhost:4000/CodingSpace/TensorFlow/",
         "teaser":"http://localhost:4000/CodingSpace/assets/images/algorithm/tf.png"}]

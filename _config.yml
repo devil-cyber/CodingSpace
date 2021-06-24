@@ -119,7 +119,7 @@ author:
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
 
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-cayman
 
 # Reading Files
 include:

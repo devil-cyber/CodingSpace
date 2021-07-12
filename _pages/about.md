@@ -11,7 +11,7 @@ permalink: /about/
  </div>
  <br/>
  <div>
-  <a href="https://drive.google.com/file/d/1G0U6L7IqNelcP8z8FpzvnTQ2bZDD5fdW/view?usp=sharing""><img src="https://img.shields.io/badge/Resume-F7B500?style=for-the-badge&logo=Sketch&logoColor=white"/></a>&nbsp;
+ <a href="https://drive.google.com/file/d/1G0U6L7IqNelcP8z8FpzvnTQ2bZDD5fdW/view?usp=sharing"><img src="https://img.shields.io/badge/Resume-F7B500?style=for-the-badge&logo=Sketch&logoColor=white"/></a>&nbsp;
   <a href="https://guthub.com/devil-cyber"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/></a>&nbsp;
   <a href="https://www.linkedin.com/in/mani360/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/> </a> &nbsp;
   <a href="https://www.hackerrank.com/profile/mani360"><img src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white"/></a> &nbsp;

@@ -3,7 +3,7 @@ layout: single
 header:
   overlay_color: "#333"
   teaser: https://static.javatpoint.com/images/javascript/javascript_logo.png
-title:  "How JavaScript Execuion Context Work?"
+title:  "How JavaScript Execution Context Work?"
 excerpt: "Web Development"
 breadcrumbs: true
 share: true

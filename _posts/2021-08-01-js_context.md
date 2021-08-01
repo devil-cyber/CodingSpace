@@ -1,3 +1,17 @@
+---
+layout: single
+header:
+  overlay_color: "#333"
+  teaser: https://static.javatpoint.com/images/javascript/javascript_logo.png
+title:  "How Javascript Execuion Context Work?"
+excerpt: "Web Development"
+breadcrumbs: true
+share: true
+permalink: /execution-context/
+date:    2021-08-01
+toc: true
+
+---
 ## Everything in js happen inside execution context
 
 ![](https://miro.medium.com/max/2000/1*ACtBy8CIepVTOSYcVwZ34Q.png)
